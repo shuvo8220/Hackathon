@@ -1,0 +1,59 @@
+{
+  "form_metadata": {
+    "form_name": "Form I",
+    "form_title": "Declaration on Registration of Company",
+    "act_name": "Companies Act, 1994",
+    "section": "25"
+  },
+
+  "company_information": {
+    "company_name": "",
+    "proposed_company_type": ""
+  },
+
+  "filing_information": {
+    "presented_for_filing_by": ""
+  },
+
+  "applicant_information": {
+    "applicant_name": "",
+    "applicant_address": "",
+    "professional_role": [
+      "Advocate",
+      "Attorney",
+      "Pleader"
+    ],
+    "company_role": [
+      "Director",
+      "Manager",
+      "Secretary"
+    ]
+  },
+
+  "declaration": {
+    "declaration_statement": "Compliance with Companies Act, 1994",
+    "compliance_confirmed": true,
+    "legal_reference": "Section 25(2)",
+    "statement_of_truth": true,
+    "exception_note": "Fees payable on registration not yet paid"
+  },
+
+  "financial_information": {
+    "registration_fee": "",
+    "other_payable_sums": ""
+  },
+
+  "signature_details": {
+    "signature_required": true,
+    "signature_label": "Signature",
+    "signatory_name": "",
+    "signatory_designation": "",
+    "signature_date": ""
+  },
+
+  "notes": {
+    "magistrate_not_required": true,
+    "affidavit_stamp_not_required": true,
+    "strike_out_instruction": "Strike out the portion which does not apply"
+  }
+}

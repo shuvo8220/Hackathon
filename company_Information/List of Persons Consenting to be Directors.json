@@ -1,0 +1,45 @@
+{
+  "form_metadata": {
+    "form_name": "Form X",
+    "form_title": "List of Persons Consenting to be Directors",
+    "act_name": "Companies Act, 1994",
+    "section": "92"
+  },
+
+  "company_information": {
+    "company_name": ""
+  },
+
+  "filing_information": {
+    "presented_for_filing_by": "",
+    "submitted_to": "Registrar of Joint Stock Companies"
+  },
+
+  "directors": [
+    {
+      "name": "",
+      "address": "",
+      "description": "",
+      "consent_given": true
+    }
+  ],
+
+  "director_table_structure": {
+    "columns": [
+      "Name",
+      "Address",
+      "Description"
+    ]
+  },
+
+  "declaration": {
+    "statement": "Persons have consented to be Directors",
+    "legal_reference": "Section 92(2)"
+  },
+
+  "signature_details": {
+    "signature_required": true,
+    "signature_label": "Signature",
+    "signatory_details": "Signature, Address and description of applicant"
+  }
+}

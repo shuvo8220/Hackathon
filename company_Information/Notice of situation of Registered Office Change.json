@@ -1,0 +1,53 @@
+{
+  "form_metadata": {
+    "form_name": "Form VI",
+    "form_title": "Notice of situation of Registered Office / Change",
+    "act_name": "Companies Act, 1994",
+    "section": "77"
+  },
+
+  "company_information": {
+    "company_name": "",
+    "registration_number": ""
+  },
+
+  "financial_information": {
+    "filing_fee": "20 BDT"
+  },
+
+  "filing_information": {
+    "presented_for_filing_by": "",
+    "submitted_to": "Registrar of Joint Stock Companies"
+  },
+
+  "registered_office": {
+    "current_address": "",
+    "previous_address": "",
+    "new_address": "",
+    "address_change": true,
+    "date_of_change": ""
+  },
+
+  "authority_block": {
+    "to": "Registrar of Joint Stock Companies",
+    "office_location": ""
+  },
+
+  "signature_details": {
+    "signature_required": true,
+    "signatory_designation": [
+      "Director",
+      "Manager",
+      "Secretary"
+    ],
+    "signature_label": "Signature",
+    "designation_label": "Designation",
+    "signature_date": ""
+  },
+
+  "date_information": {
+    "day": "",
+    "month": "",
+    "year": ""
+  }
+}
