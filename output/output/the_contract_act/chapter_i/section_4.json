@@ -1,0 +1,49 @@
+{
+  "chunk_id": "the_contract_act__chi__s4",
+  "act_name": "The Contract Act",
+  "act_number": "ACT NO. IX OF 1872",
+  "chapter_number": "I",
+  "chapter_title": "OF THE COMMUNICATION, ACCEPTANCE AND REVOCATION OF PROPOSALS",
+  "section_number": "4",
+  "section_title": "The communication of a proposal is complete when it comes to the",
+  "content": "4. The communication of a proposal is complete when it comes to the\nwhen\nknowledge of the person to whom it is made.\ncomplete\nThe communication of an acceptance is complete,–\nas against the proposer, when it is put in a course of transmission to him, so\nas to be out of the power of the acceptor;\nas against the acceptor, when it comes to the knowledge of the proposer.\nThe communication of a revocation is complete,-\nas against the person who makes it, when it is put into a course of\ntransmission to the person to whom it is made, so as to be out of the power\nof the person who makes it;\nas against the person to whom it is made, when it comes to his knowledge.\nIllustrations\n(a) A proposes, by letter, to sell a house to B at a certain price.\nThe communication of the proposal is complete when B receives the letter.\n(b) B accepts A's proposal by a letter sent by post.\nThe communication of the acceptance is complete,–\nas against A, when the letter is posted;\nas against B, when the letter is received by A.\n(c) A revokes his proposal by telegram.\n\nThe revocation is complete as against A when the telegram is despatched. It\nis complete as against B when B receives it.\nB revokes his acceptance by telegram. B's revocation is complete as against\nB when the telegram is despatched, and as against A when it reaches him.\nRevocation",
+  "sub_sections": [
+    {
+      "marker": "(a)",
+      "text": "A proposes, by letter, to sell a house to B at a certain price.\nThe communication of the proposal is complete when B receives the letter."
+    },
+    {
+      "marker": "(b)",
+      "text": "B accepts A's proposal by a letter sent by post.\nThe communication of the acceptance is complete,–\nas against A, when the letter is posted;\nas against B, when the letter is received by A."
+    },
+    {
+      "marker": "(c)",
+      "text": "A revokes his proposal by telegram.\n\nThe revocation is complete as against A when the telegram is despatched. It\nis complete as against B when B receives it.\nB revokes his acceptance by telegram. B's revocation is complete as against\nB when the telegram is despatched, and as against A when it reaches him.\nRevocation"
+    }
+  ],
+  "illustrations": [
+    "A proposes, by letter, to sell a house to B at a certain price.\nThe communication of the proposal is complete when B receives the letter.",
+    "B accepts A's proposal by a letter sent by post.\nThe communication of the acceptance is complete,–\nas against A, when the letter is posted;\nas against B, when the letter is received by A.",
+    "A revokes his proposal by telegram.\n\nThe revocation is complete as against A when the telegram is despatched. It\nis complete as against B when B receives it.\nB revokes his acceptance by telegram. B's revocation is complete as against\nB when the telegram is despatched, and as against A when it reaches him.\nRevocation"
+  ],
+  "exceptions": [],
+  "explanations": [],
+  "language": "en",
+  "has_illustrations": true,
+  "priority": 3,
+  "keywords": [
+    "acceptance",
+    "proposal",
+    "communication",
+    "complete",
+    "when",
+    "comes"
+  ],
+  "source_file": "act-print-26.pdf",
+  "page_range": [
+    2,
+    3
+  ],
+  "char_count": 1333,
+  "word_count": 250
+}

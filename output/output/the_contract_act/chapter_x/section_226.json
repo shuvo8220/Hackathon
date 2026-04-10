@@ -1,0 +1,47 @@
+{
+  "chunk_id": "the_contract_act__chx__s226",
+  "act_name": "The Contract Act",
+  "act_number": "ACT NO. IX OF 1872",
+  "chapter_number": "X",
+  "chapter_title": "of express",
+  "section_number": "226",
+  "section_title": "Contracts entered into through an agent, and obligations arising from",
+  "content": "226. Contracts entered into through an agent, and obligations arising from\nand\nacts done by an agent, may be enforced in the same manner, and will have\nconsequences\nof agent's the same legal consequences, as if the contracts had been entered into and\ncontracts\nthe acts done by the principal in person.\nIllustrations\n(a) A buys goods from B, knowing that he is an agent for their sale, but not\nknowing who is the principal. B's principal is the person entitled to claim from\nA the price of the goods, and A cannot, in a suit by the principal, set off\nagainst that claim a debt due to himself from B.\n(b) A, being B's agent with authority to receive money on his behalf, receives\nfrom C a sum of money due to B. C is discharged of his obligation to pay the\nsum in question to B.\nPrincipal",
+  "sub_sections": [
+    {
+      "marker": "(a)",
+      "text": "A buys goods from B, knowing that he is an agent for their sale, but not\nknowing who is the principal. B's principal is the person entitled to claim from\nA the price of the goods, and A cannot, in a suit by the principal, set off\nagainst that claim a debt due to himself from B."
+    },
+    {
+      "marker": "(b)",
+      "text": "A, being B's agent with authority to receive money on his behalf, receives\nfrom C a sum of money due to B. C is discharged of his obligation to pay the\nsum in question to B.\nPrincipal"
+    }
+  ],
+  "illustrations": [
+    "A buys goods from B, knowing that he is an agent for their sale, but not\nknowing who is the principal. B's principal is the person entitled to claim from\nA the price of the goods, and A cannot, in a suit by the principal, set off\nagainst that claim a debt due to himself from B.",
+    "A, being B's agent with authority to receive money on his behalf, receives\nfrom C a sum of money due to B. C is discharged of his obligation to pay the\nsum in question to B.\nPrincipal"
+  ],
+  "exceptions": [],
+  "explanations": [],
+  "language": "en",
+  "has_illustrations": true,
+  "priority": 3,
+  "keywords": [
+    "contract",
+    "contracts",
+    "entered",
+    "into",
+    "through",
+    "agent",
+    "obligations",
+    "arising",
+    "from"
+  ],
+  "source_file": "act-print-26.pdf",
+  "page_range": [
+    59,
+    59
+  ],
+  "char_count": 787,
+  "word_count": 149
+}

@@ -1,0 +1,53 @@
+{
+  "chunk_id": "the_contract_act__ch0__s141",
+  "act_name": "The Contract Act",
+  "act_number": "ACT NO. IX OF 1872",
+  "chapter_number": "0",
+  "chapter_title": "PRELIMINARY",
+  "section_number": "141",
+  "section_title": "A surety is entitled to the benefit of every security which the creditor has",
+  "content": "141. A surety is entitled to the benefit of every security which the creditor has\nright to\nagainst the principal debtor at the time when the contract of suretyship is\nbenefit of\ncreditor's entered into, whether the surety knows of the existence of such security or\nsecurities\nnot; and, if the creditor loses, or, without the consent of the surety, parts with\nsuch security, the surety is discharged to the extent of the value of the\nsecurity.\nIllustrations\n(a) C advances to B, his tenant, 2,000 Taka on the guarantee of A.C has\nalso, a further security for the 2,000 Taka by a mortgage of B's furniture. C\ncancels the mortgage. B becomes insolvent, and C sues A on his guarantee.\nA is discharged from liability to the amount of the value of the furniture.\n(b) C, a creditor, whose advance to B is secured by a decree, receives also a\nguarantee for that advance from A. C afterwards takes B's goods in\nexecution under the decree, and then, without the knowledge of A, withdraws\nthe execution. A is discharged.\n(c) A, as surety for B, makes a bond jointly with B to C, to secure a loan from\nC to B. Afterwards, C obtains from B a further security for the same debt.\nSubsequently, C gives up the further security. A is not discharged.\nGuarantee",
+  "sub_sections": [
+    {
+      "marker": "(a)",
+      "text": "C advances to B, his tenant, 2,000 Taka on the guarantee of A.C has\nalso, a further security for the 2,000 Taka by a mortgage of B's furniture. C\ncancels the mortgage. B becomes insolvent, and C sues A on his guarantee.\nA is discharged from liability to the amount of the value of the furniture."
+    },
+    {
+      "marker": "(b)",
+      "text": "C, a creditor, whose advance to B is secured by a decree, receives also a\nguarantee for that advance from A. C afterwards takes B's goods in\nexecution under the decree, and then, without the knowledge of A, withdraws\nthe execution. A is discharged."
+    },
+    {
+      "marker": "(c)",
+      "text": "A, as surety for B, makes a bond jointly with B to C, to secure a loan from\nC to B. Afterwards, C obtains from B a further security for the same debt.\nSubsequently, C gives up the further security. A is not discharged.\nGuarantee"
+    }
+  ],
+  "illustrations": [
+    "C advances to B, his tenant, 2,000 Taka on the guarantee of A.C has\nalso, a further security for the 2,000 Taka by a mortgage of B's furniture. C\ncancels the mortgage. B becomes insolvent, and C sues A on his guarantee.\nA is discharged from liability to the amount of the value of the furniture.",
+    "C, a creditor, whose advance to B is secured by a decree, receives also a\nguarantee for that advance from A. C afterwards takes B's goods in\nexecution under the decree, and then, without the knowledge of A, withdraws\nthe execution. A is discharged.",
+    "A, as surety for B, makes a bond jointly with B to C, to secure a loan from\nC to B. Afterwards, C obtains from B a further security for the same debt.\nSubsequently, C gives up the further security. A is not discharged.\nGuarantee"
+  ],
+  "exceptions": [],
+  "explanations": [],
+  "language": "en",
+  "has_illustrations": true,
+  "priority": 3,
+  "keywords": [
+    "liability",
+    "contract",
+    "consent",
+    "surety",
+    "entitled",
+    "benefit",
+    "every",
+    "security",
+    "which",
+    "creditor"
+  ],
+  "source_file": "act-print-26.pdf",
+  "page_range": [
+    40,
+    40
+  ],
+  "char_count": 1242,
+  "word_count": 226
+}

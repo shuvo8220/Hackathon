@@ -1,0 +1,46 @@
+{
+  "chunk_id": "the_contract_act__chx__s194",
+  "act_name": "The Contract Act",
+  "act_number": "ACT NO. IX OF 1872",
+  "chapter_number": "X",
+  "chapter_title": "of express",
+  "section_number": "194",
+  "section_title": "Where an agent, holding an express or implied authority to name",
+  "content": "194. Where an agent, holding an express or implied authority to name\nbetween\nanother person to act for the principal in the business of the agency, has\nprincipal\nand person named another person accordingly, such person is not a sub-agent, but an\nduly\nagent of the principal for such part of the business of the agency as is\nappointed\nby agent to entrusted to him.\nact in\nIllustrations\nbusiness of\nagency\n(a) A directs B, his solicitor, to sell his estate by auction, and to employ an\nauctioneer for the purpose. B names C, an auctioneer, to conduct the sale. C\nis not a sub-agent, but is A's agent for the conduct of the sale.\n(b) A authorizes B, a merchant in Chittagong, to recover the moneys due to A\nfrom C & Co. B instructs D, a solicitor, to take legal proceedings against C &\nCo. for the recovery of the money. D is not a sub-agent, but is solicitor for A.\nAgent's duty",
+  "sub_sections": [
+    {
+      "marker": "(a)",
+      "text": "A directs B, his solicitor, to sell his estate by auction, and to employ an\nauctioneer for the purpose. B names C, an auctioneer, to conduct the sale. C\nis not a sub-agent, but is A's agent for the conduct of the sale."
+    },
+    {
+      "marker": "(b)",
+      "text": "A authorizes B, a merchant in Chittagong, to recover the moneys due to A\nfrom C & Co. B instructs D, a solicitor, to take legal proceedings against C &\nCo. for the recovery of the money. D is not a sub-agent, but is solicitor for A.\nAgent's duty"
+    }
+  ],
+  "illustrations": [
+    "business of\nagency",
+    "A directs B, his solicitor, to sell his estate by auction, and to employ an\nauctioneer for the purpose. B names C, an auctioneer, to conduct the sale. C\nis not a sub-agent, but is A's agent for the conduct of the sale.",
+    "A authorizes B, a merchant in Chittagong, to recover the moneys due to A\nfrom C & Co. B instructs D, a solicitor, to take legal proceedings against C &\nCo. for the recovery of the money. D is not a sub-agent, but is solicitor for A.\nAgent's duty"
+  ],
+  "exceptions": [],
+  "explanations": [],
+  "language": "en",
+  "has_illustrations": true,
+  "priority": 3,
+  "keywords": [
+    "where",
+    "agent",
+    "holding",
+    "express",
+    "implied",
+    "authority",
+    "name"
+  ],
+  "source_file": "act-print-26.pdf",
+  "page_range": [
+    51,
+    51
+  ],
+  "char_count": 876,
+  "word_count": 165
+}

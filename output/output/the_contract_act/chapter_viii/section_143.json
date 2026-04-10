@@ -1,0 +1,45 @@
+{
+  "chunk_id": "the_contract_act__chviii__s143",
+  "act_name": "The Contract Act",
+  "act_number": "ACT NO. IX OF 1872",
+  "chapter_number": "VIII",
+  "chapter_title": "OF INDEMNITY AND GUARANTEE",
+  "section_number": "143",
+  "section_title": "Any guarantee which the creditor has obtained by means of keeping",
+  "content": "143. Any guarantee which the creditor has obtained by means of keeping\nobtained by\nsilence as to material circumstances is invalid.\nconcealment\ninvalid\nIllustrations\n(a) A engages B as clerk to collect money for him. B fails to account for some\nof his receipts, and A in consequence calls upon him to furnish security his\nduly accounting. C gives his guarantee for B's duly accounting. A does not\nacquaint C with B's previous conduct. B afterwards makes default. The\nguarantee is invalid.\n(b) A guarantees to C payment for iron to be supplied by him to B to the\namount of 2,000 tons. B and C have privately agreed that B should pay five\nTaka per ton beyond the market price, such excess to be applied in\nliquidation of an old debt. This agreement is concealed from A. A is not liable\nas a surety.\n\nGuarantee",
+  "sub_sections": [
+    {
+      "marker": "(a)",
+      "text": "A engages B as clerk to collect money for him. B fails to account for some\nof his receipts, and A in consequence calls upon him to furnish security his\nduly accounting. C gives his guarantee for B's duly accounting. A does not\nacquaint C with B's previous conduct. B afterwards makes default. The\nguarantee is invalid."
+    },
+    {
+      "marker": "(b)",
+      "text": "A guarantees to C payment for iron to be supplied by him to B to the\namount of 2,000 tons. B and C have privately agreed that B should pay five\nTaka per ton beyond the market price, such excess to be applied in\nliquidation of an old debt. This agreement is concealed from A. A is not liable\nas a surety.\n\nGuarantee"
+    }
+  ],
+  "illustrations": [
+    "A engages B as clerk to collect money for him. B fails to account for some\nof his receipts, and A in consequence calls upon him to furnish security his\nduly accounting. C gives his guarantee for B's duly accounting. A does not\nacquaint C with B's previous conduct. B afterwards makes default. The\nguarantee is invalid.",
+    "A guarantees to C payment for iron to be supplied by him to B to the\namount of 2,000 tons. B and C have privately agreed that B should pay five\nTaka per ton beyond the market price, such excess to be applied in\nliquidation of an old debt. This agreement is concealed from A. A is not liable\nas a surety.\n\nGuarantee"
+  ],
+  "exceptions": [],
+  "explanations": [],
+  "language": "en",
+  "has_illustrations": true,
+  "priority": 3,
+  "keywords": [
+    "agreement",
+    "guarantee",
+    "which",
+    "creditor",
+    "obtained",
+    "means",
+    "keeping"
+  ],
+  "source_file": "act-print-26.pdf",
+  "page_range": [
+    40,
+    41
+  ],
+  "char_count": 807,
+  "word_count": 146
+}

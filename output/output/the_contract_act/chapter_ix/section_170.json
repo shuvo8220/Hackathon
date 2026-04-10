@@ -1,0 +1,44 @@
+{
+  "chunk_id": "the_contract_act__chix__s170",
+  "act_name": "The Contract Act",
+  "act_number": "ACT NO. IX OF 1872",
+  "chapter_number": "IX",
+  "chapter_title": "OF BAILMENT",
+  "section_number": "170",
+  "section_title": "Where the bailee has, in accordance with the purpose of the bailment,",
+  "content": "170. Where the bailee has, in accordance with the purpose of the bailment,\nparticular\nrendered any service involving the exercise of labour or skill in respect of the\nlien\ngoods bailed, he has, in the absence of a contract to the contrary, a right to\nretain such goods until he receives due remuneration for the services he has\nrendered in respect of them.\nIllustrations\n(a) A delivers a rough diamond to B, A jeweller, to be cut and polished, which\nis accordingly done. B is entitled to retain the stone till he is paid for the\nservices he has rendered.\n(b) A gives cloth to B, a tailor, to make into a coat. B promises A to deliver the\ncoat as soon as it is finished, and to give a three months' credit for the price.\nB is not entitled to retain the coat until he is paid.\nGeneral lien",
+  "sub_sections": [
+    {
+      "marker": "(a)",
+      "text": "A delivers a rough diamond to B, A jeweller, to be cut and polished, which\nis accordingly done. B is entitled to retain the stone till he is paid for the\nservices he has rendered."
+    },
+    {
+      "marker": "(b)",
+      "text": "A gives cloth to B, a tailor, to make into a coat. B promises A to deliver the\ncoat as soon as it is finished, and to give a three months' credit for the price.\nB is not entitled to retain the coat until he is paid.\nGeneral lien"
+    }
+  ],
+  "illustrations": [
+    "A delivers a rough diamond to B, A jeweller, to be cut and polished, which\nis accordingly done. B is entitled to retain the stone till he is paid for the\nservices he has rendered.",
+    "A gives cloth to B, a tailor, to make into a coat. B promises A to deliver the\ncoat as soon as it is finished, and to give a three months' credit for the price.\nB is not entitled to retain the coat until he is paid.\nGeneral lien"
+  ],
+  "exceptions": [],
+  "explanations": [],
+  "language": "en",
+  "has_illustrations": true,
+  "priority": 3,
+  "keywords": [
+    "contract",
+    "where",
+    "bailee",
+    "accordance",
+    "purpose",
+    "bailment"
+  ],
+  "source_file": "act-print-26.pdf",
+  "page_range": [
+    46,
+    46
+  ],
+  "char_count": 787,
+  "word_count": 150
+}

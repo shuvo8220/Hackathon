@@ -32,7 +32,7 @@ client = OpenAI(
     api_key=os.getenv("GROQ_API_KEY"),
     base_url="https://api.groq.com/openai/v1"
 )
-MODEL = "llama-3.3-70b-versatile"
+MODEL = "ll"
 
 # Business types with examples
 BUSINESS_TYPES = {

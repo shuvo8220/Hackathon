@@ -1,0 +1,15 @@
+{
+  "total_files": 1,
+  "successful": 1,
+  "failed": 0,
+  "results": [
+    {
+      "filename": "Application Fee for Companies.pdf",
+      "title": "Unknown Document",
+      "type": "general",
+      "sections": 0,
+      "pricing_categories": 6,
+      "status": "success"
+    }
+  ]
+}

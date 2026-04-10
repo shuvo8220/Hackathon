@@ -1,0 +1,47 @@
+{
+  "chunk_id": "the_contract_act__chx__s237",
+  "act_name": "The Contract Act",
+  "act_number": "ACT NO. IX OF 1872",
+  "chapter_number": "X",
+  "chapter_title": "of express",
+  "section_number": "237",
+  "section_title": "When an agent has, without authority, done acts or incurred obligations",
+  "content": "237. When an agent has, without authority, done acts or incurred obligations\nprincipal\nto third persons on behalf of his principal, the principal is bound by such acts\ninducing\nbelief that or obligations if he has by his words or conduct induced such third persons to\nagent's\nbelieve that such acts and obligations were within the scope of the agent's\nunauthorized\nacts were authority.\nauthorized\nIllustrations\n(a) A consigns goods to B for sale, and gives him instructions not to sell\nunder a fixed price. C, being ignorant of B's instructions, enters into a\ncontract with B to buy the goods at a price lower than the reserved price. A is\nbound by the contract.\n(b) A entrusts B with negotiable instruments endorsed in blank. B sells them\nto C in violation of private orders from A. The sale is good.\nEffect, on",
+  "sub_sections": [
+    {
+      "marker": "(a)",
+      "text": "A consigns goods to B for sale, and gives him instructions not to sell\nunder a fixed price. C, being ignorant of B's instructions, enters into a\ncontract with B to buy the goods at a price lower than the reserved price. A is\nbound by the contract."
+    },
+    {
+      "marker": "(b)",
+      "text": "A entrusts B with negotiable instruments endorsed in blank. B sells them\nto C in violation of private orders from A. The sale is good.\nEffect, on"
+    }
+  ],
+  "illustrations": [
+    "A consigns goods to B for sale, and gives him instructions not to sell\nunder a fixed price. C, being ignorant of B's instructions, enters into a\ncontract with B to buy the goods at a price lower than the reserved price. A is\nbound by the contract.",
+    "A entrusts B with negotiable instruments endorsed in blank. B sells them\nto C in violation of private orders from A. The sale is good.\nEffect, on"
+  ],
+  "exceptions": [],
+  "explanations": [],
+  "language": "en",
+  "has_illustrations": true,
+  "priority": 3,
+  "keywords": [
+    "contract",
+    "when",
+    "agent",
+    "without",
+    "authority",
+    "done",
+    "acts",
+    "incurred",
+    "obligations"
+  ],
+  "source_file": "act-print-26.pdf",
+  "page_range": [
+    62,
+    62
+  ],
+  "char_count": 812,
+  "word_count": 143
+}

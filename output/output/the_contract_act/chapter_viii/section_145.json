@@ -1,0 +1,49 @@
+{
+  "chunk_id": "the_contract_act__chviii__s145",
+  "act_name": "The Contract Act",
+  "act_number": "ACT NO. IX OF 1872",
+  "chapter_number": "VIII",
+  "chapter_title": "OF INDEMNITY AND GUARANTEE",
+  "section_number": "145",
+  "section_title": "In every contract of guarantee there is an implied promise by the",
+  "content": "145. In every contract of guarantee there is an implied promise by the\npromise to\nprincipal debtor to indemnify the surety; and the surety is entitled to recover\nindemnify\nsurety from the principal debtor whatever sum he has rightfully paid under the\nguarantee, but no sums which he has paid wrongfully.\nIllustrations\n(a) B is indebted to C, and A is surety for the debt. C demands payment from\nA, and on his refusal sues him for the amount. A defends the suit, having\nreasonable grounds for doing so, but is compelled to pay the amount of the\ndebt with costs. He can recover from B the amount paid by him for costs, as\nwell as the principal debt.\n(b) C lends B a sum of money, and A, at the request of B, accepts a bill of\nexchange drawn by B upon A to secure the amount. C, the holder of the bill,\ndemands payment of it from A, and, on A's refusal to pay, sues him upon the\nbill. A, not having reasonable grounds for so doing, defends the suit, and has\nto pay the amount of the bill and costs. He can recover from B the amount of\nthe bill, but not the sum paid for costs, as there was no real ground for\ndefending the action.\n(c) A guarantees to C, to the extent of 2,000 Taka, payment for rice to be\nsupplied by C to B. C supplies to B rice to a less amount than 2,000 Taka,\nbut obtains from A payment of the sum of 2,000 Taka in respect of the rice\nsupplied. A cannot recover from B more than the price of the rice actually\nsupplied.\nCo-sureties",
+  "sub_sections": [
+    {
+      "marker": "(a)",
+      "text": "B is indebted to C, and A is surety for the debt. C demands payment from\nA, and on his refusal sues him for the amount. A defends the suit, having\nreasonable grounds for doing so, but is compelled to pay the amount of the\ndebt with costs. He can recover from B the amount paid by him for costs, as\nwell as the principal debt."
+    },
+    {
+      "marker": "(b)",
+      "text": "C lends B a sum of money, and A, at the request of B, accepts a bill of\nexchange drawn by B upon A to secure the amount. C, the holder of the bill,\ndemands payment of it from A, and, on A's refusal to pay, sues him upon the\nbill. A, not having reasonable grounds for so doing, defends the suit, and has\nto pay the amount of the bill and costs. He can recover from B the amount of\nthe bill, but not the sum paid for costs, as there was no real ground for\ndefending the action."
+    },
+    {
+      "marker": "(c)",
+      "text": "A guarantees to C, to the extent of 2,000 Taka, payment for rice to be\nsupplied by C to B. C supplies to B rice to a less amount than 2,000 Taka,\nbut obtains from A payment of the sum of 2,000 Taka in respect of the rice\nsupplied. A cannot recover from B more than the price of the rice actually\nsupplied.\nCo-sureties"
+    }
+  ],
+  "illustrations": [
+    "B is indebted to C, and A is surety for the debt. C demands payment from\nA, and on his refusal sues him for the amount. A defends the suit, having\nreasonable grounds for doing so, but is compelled to pay the amount of the\ndebt with costs. He can recover from B the amount paid by him for costs, as\nwell as the principal debt.",
+    "C lends B a sum of money, and A, at the request of B, accepts a bill of\nexchange drawn by B upon A to secure the amount. C, the holder of the bill,\ndemands payment of it from A, and, on A's refusal to pay, sues him upon the\nbill. A, not having reasonable grounds for so doing, defends the suit, and has\nto pay the amount of the bill and costs. He can recover from B the amount of\nthe bill, but not the sum paid for costs, as there was no real ground for\ndefending the action.",
+    "A guarantees to C, to the extent of 2,000 Taka, payment for rice to be\nsupplied by C to B. C supplies to B rice to a less amount than 2,000 Taka,\nbut obtains from A payment of the sum of 2,000 Taka in respect of the rice\nsupplied. A cannot recover from B more than the price of the rice actually\nsupplied.\nCo-sureties"
+  ],
+  "exceptions": [],
+  "explanations": [],
+  "language": "en",
+  "has_illustrations": true,
+  "priority": 3,
+  "keywords": [
+    "contract",
+    "every",
+    "guarantee",
+    "there",
+    "implied",
+    "promise"
+  ],
+  "source_file": "act-print-26.pdf",
+  "page_range": [
+    41,
+    41
+  ],
+  "char_count": 1449,
+  "word_count": 285
+}

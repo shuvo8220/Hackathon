@@ -1,0 +1,51 @@
+{
+  "chunk_id": "the_contract_act__ch0__s32",
+  "act_name": "The Contract Act",
+  "act_number": "ACT NO. IX OF 1872",
+  "chapter_number": "0",
+  "chapter_title": "PRELIMINARY",
+  "section_number": "32",
+  "section_title": "Contingent contracts to do or not to do anything if an uncertain future",
+  "content": "32. Contingent contracts to do or not to do anything if an uncertain future\nof contracts\nevent happens cannot be enforced by law unless and until that event has\ncontingent\non an event happened.\nhappening\nIf the event becomes impossible, such contracts become void.\nIllustrations\n(a) A makes a contract with B to buy B's horse if A survives C. This contract\ncannot be enforced by law unless and until C dies in A's lifetime.\n(b) A makes a contract with B to sell a horse to B at a specified price, if C, to\nwhom the horse has been offered, refuses to buy him. The contract cannot\nbe enforced by law unless and until C refuses to buy the horse.\n(c) A contracts to pay B a sum of money when B marries C. C dies without\nbeing married to B. The contract becomes void.\nEnforcement",
+  "sub_sections": [
+    {
+      "marker": "(a)",
+      "text": "A makes a contract with B to buy B's horse if A survives C. This contract\ncannot be enforced by law unless and until C dies in A's lifetime."
+    },
+    {
+      "marker": "(b)",
+      "text": "A makes a contract with B to sell a horse to B at a specified price, if C, to\nwhom the horse has been offered, refuses to buy him. The contract cannot\nbe enforced by law unless and until C refuses to buy the horse."
+    },
+    {
+      "marker": "(c)",
+      "text": "A contracts to pay B a sum of money when B marries C. C dies without\nbeing married to B. The contract becomes void.\nEnforcement"
+    }
+  ],
+  "illustrations": [
+    "A makes a contract with B to buy B's horse if A survives C. This contract\ncannot be enforced by law unless and until C dies in A's lifetime.",
+    "A makes a contract with B to sell a horse to B at a specified price, if C, to\nwhom the horse has been offered, refuses to buy him. The contract cannot\nbe enforced by law unless and until C refuses to buy the horse.",
+    "A contracts to pay B a sum of money when B marries C. C dies without\nbeing married to B. The contract becomes void.\nEnforcement"
+  ],
+  "exceptions": [],
+  "explanations": [],
+  "language": "en",
+  "has_illustrations": true,
+  "priority": 3,
+  "keywords": [
+    "contract",
+    "void",
+    "offer",
+    "contingent",
+    "contracts",
+    "anything",
+    "uncertain",
+    "future"
+  ],
+  "source_file": "act-print-26.pdf",
+  "page_range": [
+    15,
+    15
+  ],
+  "char_count": 774,
+  "word_count": 147
+}

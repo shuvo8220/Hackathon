@@ -1,0 +1,44 @@
+{
+  "chunk_id": "the_contract_act__chx__s229",
+  "act_name": "The Contract Act",
+  "act_number": "ACT NO. IX OF 1872",
+  "chapter_number": "X",
+  "chapter_title": "of express",
+  "section_number": "229",
+  "section_title": "Any notice given to or information obtained by the agent, provided it be",
+  "content": "229. Any notice given to or information obtained by the agent, provided it be\nof notice\ngiven or obtained in the course of the business transacted by him for the\ngiven to\nagent principal, shall, as between the principal and third parties, have the same\nlegal consequences as if it had been given to or obtained by the principal.\nIllustrations\n(a) A is employed by B to buy from C certain goods, of which C is the\napparent owner, and buys them accordingly. In the course of the treaty for\nthe sale, A learns that the goods really belonged to D, but B is ignorant of\nthat fact, B is not entitled to set off a debt owing to him from C against the\nprice of the goods.\n(b) A is employed by B to buy from C goods of which C is the apparent\nowner. A was, before he was so employed, a servant of C, and then learnt\nthat goods really belonged to D, but B is ignorant of that fact. In spite of the\nknowledge of his agent, B may set off against the price of the goods a debt\nowing to him from C.\nAgent",
+  "sub_sections": [
+    {
+      "marker": "(a)",
+      "text": "A is employed by B to buy from C certain goods, of which C is the\napparent owner, and buys them accordingly. In the course of the treaty for\nthe sale, A learns that the goods really belonged to D, but B is ignorant of\nthat fact, B is not entitled to set off a debt owing to him from C against the\nprice of the goods."
+    },
+    {
+      "marker": "(b)",
+      "text": "A is employed by B to buy from C goods of which C is the apparent\nowner. A was, before he was so employed, a servant of C, and then learnt\nthat goods really belonged to D, but B is ignorant of that fact. In spite of the\nknowledge of his agent, B may set off against the price of the goods a debt\nowing to him from C.\nAgent"
+    }
+  ],
+  "illustrations": [
+    "A is employed by B to buy from C certain goods, of which C is the\napparent owner, and buys them accordingly. In the course of the treaty for\nthe sale, A learns that the goods really belonged to D, but B is ignorant of\nthat fact, B is not entitled to set off a debt owing to him from C against the\nprice of the goods.",
+    "A is employed by B to buy from C goods of which C is the apparent\nowner. A was, before he was so employed, a servant of C, and then learnt\nthat goods really belonged to D, but B is ignorant of that fact. In spite of the\nknowledge of his agent, B may set off against the price of the goods a debt\nowing to him from C.\nAgent"
+  ],
+  "exceptions": [],
+  "explanations": [],
+  "language": "en",
+  "has_illustrations": true,
+  "priority": 3,
+  "keywords": [
+    "notice",
+    "given",
+    "information",
+    "obtained",
+    "agent",
+    "provided"
+  ],
+  "source_file": "act-print-26.pdf",
+  "page_range": [
+    60,
+    60
+  ],
+  "char_count": 990,
+  "word_count": 199
+}

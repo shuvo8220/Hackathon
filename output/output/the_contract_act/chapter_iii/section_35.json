@@ -1,0 +1,46 @@
+{
+  "chunk_id": "the_contract_act__chiii__s35",
+  "act_name": "The Contract Act",
+  "act_number": "ACT NO. IX OF 1872",
+  "chapter_number": "III",
+  "chapter_title": "OF CONTINGENT CONTRACTS",
+  "section_number": "35",
+  "section_title": "Contingent contracts to do or not to do anything if a specified uncertain",
+  "content": "35. Contingent contracts to do or not to do anything if a specified uncertain\ncontracts\nevent happens within a fixed time become void if, at the expiration of the time\nbecome\nvoid which fixed, such event has not happened, or if, before the time fixed, such event\nare\nbecomes impossible.\ncontingent\non\nhappening\nof specified\nevent within\nfixed time\nWhen\nContingent contracts to do or not to do anything if a specified uncertain event\ncontracts\ndoes not happen within a fixed time may be enforced by law when the time\nmay be\nenforced fixed has expired and such event has not happened or, before the time fixed\nwhich are\nhas expired, if it becomes certain that such event will not happen.\ncontingent\non specified Illustrations\nevent not\nhappening (a) A promises to pay B a sum of money if a certain ship returns within a\nwithin fixed\nyear. The contract may be enforced if the ship returns within the year, and\ntime\nbecomes void if the ship is burnt within the year.\n(b) A promises to pay B a sum of money if a certain ship does not return\nwithin a year. The contract may be enforced if the ship does not return within\nthe year, or is burnt within the year.\nAgreement",
+  "sub_sections": [
+    {
+      "marker": "(a)",
+      "text": "A promises to pay B a sum of money if a certain ship returns within a\nwithin fixed\nyear. The contract may be enforced if the ship returns within the year, and\ntime\nbecomes void if the ship is burnt within the year."
+    },
+    {
+      "marker": "(b)",
+      "text": "A promises to pay B a sum of money if a certain ship does not return\nwithin a year. The contract may be enforced if the ship does not return within\nthe year, or is burnt within the year.\nAgreement"
+    }
+  ],
+  "illustrations": [
+    "event not\nhappening (a) A promises to pay B a sum of money if a certain ship returns within a\nwithin fixed\nyear. The contract may be enforced if the ship returns within the year, and\ntime\nbecomes void if the ship is burnt within the year.",
+    "A promises to pay B a sum of money if a certain ship does not return\nwithin a year. The contract may be enforced if the ship does not return within\nthe year, or is burnt within the year.\nAgreement"
+  ],
+  "exceptions": [],
+  "explanations": [],
+  "language": "en",
+  "has_illustrations": true,
+  "priority": 3,
+  "keywords": [
+    "void",
+    "agreement",
+    "contract",
+    "contingent",
+    "contracts",
+    "anything",
+    "specified",
+    "uncertain"
+  ],
+  "source_file": "act-print-26.pdf",
+  "page_range": [
+    16,
+    16
+  ],
+  "char_count": 1163,
+  "word_count": 213
+}

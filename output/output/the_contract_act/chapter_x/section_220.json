@@ -1,0 +1,43 @@
+{
+  "chunk_id": "the_contract_act__chx__s220",
+  "act_name": "The Contract Act",
+  "act_number": "ACT NO. IX OF 1872",
+  "chapter_number": "X",
+  "chapter_title": "of express",
+  "section_number": "220",
+  "section_title": "An agent who is guilty of misconduct in the business of the agency is",
+  "content": "220. An agent who is guilty of misconduct in the business of the agency is\nentitled to\nnot entitled to any remuneration in respect of that part of the business which\nremuneration\nfor business he has misconducted.\nmis-\nIllustrations\nconducted\n(a) A employs B to recover 1,00,000 Taka from C, and to lay it out on good\nsecurity. B recovers the 1,00,000 Taka and lays out 90,000 Taka on good\nsecurity, but lays out 10,000 Taka on security which he ought to have known\nto be bad, whereby A loses 2,000 Taka. B is entitled to remuneration for\nrecovering the 1,00,000 Taka and for investing the 90,000 Taka. He is not\nentitled to any remuneration for investing the 10,000 Taka, and he must\nmake good the 2,000 Taka to B.\n(b) A employs B to recover 1,000 Taka from C. Through B's misconduct the\nmoney is not recovered. B is entitled to no remuneration for his services, and\nmust make good the loss.\nAgent's lien",
+  "sub_sections": [
+    {
+      "marker": "(a)",
+      "text": "A employs B to recover 1,00,000 Taka from C, and to lay it out on good\nsecurity. B recovers the 1,00,000 Taka and lays out 90,000 Taka on good\nsecurity, but lays out 10,000 Taka on security which he ought to have known\nto be bad, whereby A loses 2,000 Taka. B is entitled to remuneration for\nrecovering the 1,00,000 Taka and for investing the 90,000 Taka. He is not\nentitled to any remuneration for investing the 10,000 Taka, and he must\nmake good the 2,000 Taka to B."
+    },
+    {
+      "marker": "(b)",
+      "text": "A employs B to recover 1,000 Taka from C. Through B's misconduct the\nmoney is not recovered. B is entitled to no remuneration for his services, and\nmust make good the loss.\nAgent's lien"
+    }
+  ],
+  "illustrations": [
+    "A employs B to recover 1,00,000 Taka from C, and to lay it out on good\nsecurity. B recovers the 1,00,000 Taka and lays out 90,000 Taka on good\nsecurity, but lays out 10,000 Taka on security which he ought to have known\nto be bad, whereby A loses 2,000 Taka. B is entitled to remuneration for\nrecovering the 1,00,000 Taka and for investing the 90,000 Taka. He is not\nentitled to any remuneration for investing the 10,000 Taka, and he must\nmake good the 2,000 Taka to B.",
+    "A employs B to recover 1,000 Taka from C. Through B's misconduct the\nmoney is not recovered. B is entitled to no remuneration for his services, and\nmust make good the loss.\nAgent's lien"
+  ],
+  "exceptions": [],
+  "explanations": [],
+  "language": "en",
+  "has_illustrations": true,
+  "priority": 3,
+  "keywords": [
+    "agent",
+    "guilty",
+    "misconduct",
+    "business",
+    "agency"
+  ],
+  "source_file": "act-print-26.pdf",
+  "page_range": [
+    57,
+    57
+  ],
+  "char_count": 904,
+  "word_count": 165
+}

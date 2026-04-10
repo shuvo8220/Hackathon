@@ -1,0 +1,52 @@
+{
+  "chunk_id": "the_contract_act__ch0__s127",
+  "act_name": "The Contract Act",
+  "act_number": "ACT NO. IX OF 1872",
+  "chapter_number": "0",
+  "chapter_title": "PRELIMINARY",
+  "section_number": "127",
+  "section_title": "Anything done, or any promise made, for the benefit of the principal",
+  "content": "127. Anything done, or any promise made, for the benefit of the principal\nfor\ndebtor may be a sufficient consideration to the surety for giving the\nguarantee\nguarantee.\nIllustrations\n(a) B requests A to sell and deliver to him goods on credit. A agrees to do so,\nprovided C will guarantee the payment of the price of the goods. C promises\nto guarantee the payment in consideration of A's promise to deliver the\ngoods. This is a sufficient consideration for C's promise.\n(b) A sells and delivers goods to B. C afterwards requests A to forbear to sue\nB for the debt for a year, and promises that if he does so, C will pay for them\nin defaults of payment by B. A agrees to forbear as requested. This is a\nsufficient consideration for C's promise.\n(c) A sells and delivers goods to B. C afterwards, without consideration,\nagrees to pay for them in default of B. The agreement is void.\nSurety's",
+  "sub_sections": [
+    {
+      "marker": "(a)",
+      "text": "B requests A to sell and deliver to him goods on credit. A agrees to do so,\nprovided C will guarantee the payment of the price of the goods. C promises\nto guarantee the payment in consideration of A's promise to deliver the\ngoods. This is a sufficient consideration for C's promise."
+    },
+    {
+      "marker": "(b)",
+      "text": "A sells and delivers goods to B. C afterwards requests A to forbear to sue\nB for the debt for a year, and promises that if he does so, C will pay for them\nin defaults of payment by B. A agrees to forbear as requested. This is a\nsufficient consideration for C's promise."
+    },
+    {
+      "marker": "(c)",
+      "text": "A sells and delivers goods to B. C afterwards, without consideration,\nagrees to pay for them in default of B. The agreement is void.\nSurety's"
+    }
+  ],
+  "illustrations": [
+    "B requests A to sell and deliver to him goods on credit. A agrees to do so,\nprovided C will guarantee the payment of the price of the goods. C promises\nto guarantee the payment in consideration of A's promise to deliver the\ngoods. This is a sufficient consideration for C's promise.",
+    "A sells and delivers goods to B. C afterwards requests A to forbear to sue\nB for the debt for a year, and promises that if he does so, C will pay for them\nin defaults of payment by B. A agrees to forbear as requested. This is a\nsufficient consideration for C's promise.",
+    "A sells and delivers goods to B. C afterwards, without consideration,\nagrees to pay for them in default of B. The agreement is void.\nSurety's"
+  ],
+  "exceptions": [],
+  "explanations": [],
+  "language": "en",
+  "has_illustrations": true,
+  "priority": 3,
+  "keywords": [
+    "void",
+    "consideration",
+    "agreement",
+    "anything",
+    "done",
+    "promise",
+    "made",
+    "benefit",
+    "principal"
+  ],
+  "source_file": "act-print-26.pdf",
+  "page_range": [
+    35,
+    35
+  ],
+  "char_count": 889,
+  "word_count": 163
+}

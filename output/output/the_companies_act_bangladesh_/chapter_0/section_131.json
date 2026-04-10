@@ -1,0 +1,47 @@
+{
+  "chunk_id": "the_companies_act_bangladesh___ch0__s131",
+  "act_name": "The Companies Act (Bangladesh)",
+  "act_number": "Act No. 18 of 1994",
+  "chapter_number": "0",
+  "chapter_title": "PRELIMINARY",
+  "section_number": "131",
+  "section_title": "Prohibition of voting by interested director.--(1) No director shall, as a director, vote on any contract or",
+  "content": "131. Prohibition of voting by interested director.--(1) No director shall, as a director, vote on any contract or\narrangement in which he is either directly or indirectly concerned or interested, nor shall his presence count for the purpose\nof forming a quorum at the time of any such vote, and if he does so vote, his vote shall not be counted:\nProvided that the directors or them may vote on any contract of indemnity against any loss which they or any one or more of\nthem may suffer by reason of becoming or being sureties or surety for the company.\n(2) Every director who contravences the provision of sub-section (1) shall be liable to a fine not exceeding five thousand\ntaka.\n(3) This section shall not apply to a private company:\nProvided that where a private company is subsidiary company of a public company, this section shall apply to all contracts or\narrangements made on behalf of the subsidiary company with any person other than the holding company.",
+  "sub_sections": [
+    {
+      "marker": "(1)",
+      "text": "No director shall, as a director, vote on any contract or\narrangement in which he is either directly or indirectly concerned or interested, nor shall his presence count for the purpose\nof forming a quorum at the time of any such vote, and if he does so vote, his vote shall not be counted:\nProvided that the directors or them may vote on any contract of indemnity against any loss which they or any one or more of\nthem may suffer by reason of becoming or being sureties or surety for the company."
+    },
+    {
+      "marker": "(2)",
+      "text": "Every director who contravences the provision of sub-section (1) shall be liable to a fine not exceeding five thousand\ntaka."
+    },
+    {
+      "marker": "(3)",
+      "text": "This section shall not apply to a private company:\nProvided that where a private company is subsidiary company of a public company, this section shall apply to all contracts or\narrangements made on behalf of the subsidiary company with any person other than the holding company."
+    }
+  ],
+  "illustrations": [],
+  "exceptions": [],
+  "explanations": [],
+  "language": "en",
+  "has_illustrations": false,
+  "priority": 1,
+  "keywords": [
+    "indemnity",
+    "contract",
+    "prohibition",
+    "voting",
+    "interested",
+    "director",
+    "shall",
+    "vote"
+  ],
+  "source_file": "5e1654acafde5companiesact_0.pdf",
+  "page_range": [
+    30,
+    30
+  ],
+  "char_count": 964,
+  "word_count": 168
+}

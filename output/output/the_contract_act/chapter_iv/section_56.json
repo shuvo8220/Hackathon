@@ -1,0 +1,60 @@
+{
+  "chunk_id": "the_contract_act__chiv__s56",
+  "act_name": "The Contract Act",
+  "act_number": "ACT NO. IX OF 1872",
+  "chapter_number": "IV",
+  "chapter_title": "OF THE PERFORMANCE OF CONTRACTS",
+  "section_number": "56",
+  "section_title": "An agreement to do an act impossible in itself is void.",
+  "content": "56. An agreement to do an act impossible in itself is void.\nto do\n\nact\nContract to\nA contract to do an act which, after the contract is made, becomes\ndo act\nimpossible, or, by reason of some event which the promissor could not\nafterwards\nbecoming prevent, unlawful, becomes void when the act becomes impossible or\nimpossible\nunlawful.\nor unlawful\nCompensation\nWhere one person has promised to do something which he knew, or, with\nfor loss\nreasonable diligence, might have known, and which the promisee did not\nthrough\nnon- know to be impossible or unlawful, such promisor must make compensation\nperformance\nto such promisee for any loss which such promisee sustains through the\nof act\nknown to be non-performance of the promise.\nimpossible\nIllustrations\nor unlawful\n(a) A agrees with B to discover treasure by magic. The agreement is void.\n(b) A and B contract to marry each other. Before the time fixed for the\nmarriage, A goes mad. The contract becomes void.\n(c) A contracts to marry B, being already married to C, and being forbidden\nby the law to which he is subject to practise polygamy. A must make\ncompensation to B for the loss caused to her by the non-performance of his\npromise.\n(d) A contracts to take in cargo for B at a foreign port. A's Government\nafterwards declares war against the country in which the port is situated. The\ncontract becomes void when war is declared.\n(e) A contracts to act at a theatre for six months in consideration of a sum,\npaid in advance by B. On several occasions A is too ill to act. The contract to\nact on those occasions becomes void.\nReciprocal",
+  "sub_sections": [
+    {
+      "marker": "(a)",
+      "text": "A agrees with B to discover treasure by magic. The agreement is void."
+    },
+    {
+      "marker": "(b)",
+      "text": "A and B contract to marry each other. Before the time fixed for the\nmarriage, A goes mad. The contract becomes void."
+    },
+    {
+      "marker": "(c)",
+      "text": "A contracts to marry B, being already married to C, and being forbidden\nby the law to which he is subject to practise polygamy. A must make\ncompensation to B for the loss caused to her by the non-performance of his\npromise."
+    },
+    {
+      "marker": "(d)",
+      "text": "A contracts to take in cargo for B at a foreign port. A's Government\nafterwards declares war against the country in which the port is situated. The\ncontract becomes void when war is declared."
+    },
+    {
+      "marker": "(e)",
+      "text": "A contracts to act at a theatre for six months in consideration of a sum,\npaid in advance by B. On several occasions A is too ill to act. The contract to\nact on those occasions becomes void.\nReciprocal"
+    }
+  ],
+  "illustrations": [
+    "A agrees with B to discover treasure by magic. The agreement is void.",
+    "A and B contract to marry each other. Before the time fixed for the\nmarriage, A goes mad. The contract becomes void.",
+    "A contracts to marry B, being already married to C, and being forbidden\nby the law to which he is subject to practise polygamy. A must make\ncompensation to B for the loss caused to her by the non-performance of his\npromise.",
+    "A contracts to take in cargo for B at a foreign port. A's Government\nafterwards declares war against the country in which the port is situated. The\ncontract becomes void when war is declared.",
+    "A contracts to act at a theatre for six months in consideration of a sum,\npaid in advance by B. On several occasions A is too ill to act. The contract to\nact on those occasions becomes void.\nReciprocal"
+  ],
+  "exceptions": [],
+  "explanations": [],
+  "language": "en",
+  "has_illustrations": true,
+  "priority": 1,
+  "keywords": [
+    "void",
+    "agreement",
+    "consideration",
+    "performance",
+    "contract",
+    "impossible",
+    "itself"
+  ],
+  "source_file": "act-print-26.pdf",
+  "page_range": [
+    23,
+    24
+  ],
+  "char_count": 1590,
+  "word_count": 281
+}

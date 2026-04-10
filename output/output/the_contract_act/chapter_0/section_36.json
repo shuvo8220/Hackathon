@@ -1,0 +1,47 @@
+{
+  "chunk_id": "the_contract_act__ch0__s36",
+  "act_name": "The Contract Act",
+  "act_number": "ACT NO. IX OF 1872",
+  "chapter_number": "0",
+  "chapter_title": "PRELIMINARY",
+  "section_number": "36",
+  "section_title": "Contingent agreements to do or not to do anything, if an impossible event",
+  "content": "36. Contingent agreements to do or not to do anything, if an impossible event\ncontingent\nhappens, are void, whether the impossibility of the event is known or not to\non\nimpossible the parties to the agreement at the time when it is made.\nevents void\nIllustrations\n(a) A agrees to pay B 1,000 Taka if two straight lines should enclose a space.\nThe agreement is void.\n(b) A agrees to pay B 1,000 Taka if B will marry A's daughter C. C was dead\nat the time of the agreement. The agreement is void.\nCHAPTER IV\nOF THE PERFORMANCE OF CONTRACTS\nContracts which must be performed\n\nObligation",
+  "sub_sections": [
+    {
+      "marker": "(a)",
+      "text": "A agrees to pay B 1,000 Taka if two straight lines should enclose a space.\nThe agreement is void."
+    },
+    {
+      "marker": "(b)",
+      "text": "A agrees to pay B 1,000 Taka if B will marry A's daughter C. C was dead\nat the time of the agreement. The agreement is void.\nCHAPTER IV\nOF THE PERFORMANCE OF CONTRACTS\nContracts which must be performed\n\nObligation"
+    }
+  ],
+  "illustrations": [
+    "A agrees to pay B 1,000 Taka if two straight lines should enclose a space.\nThe agreement is void.",
+    "A agrees to pay B 1,000 Taka if B will marry A's daughter C. C was dead\nat the time of the agreement. The agreement is void.\nCHAPTER IV\nOF THE PERFORMANCE OF CONTRACTS\nContracts which must be performed\n\nObligation"
+  ],
+  "exceptions": [],
+  "explanations": [],
+  "language": "en",
+  "has_illustrations": true,
+  "priority": 3,
+  "keywords": [
+    "contract",
+    "void",
+    "performance",
+    "agreement",
+    "contingent",
+    "agreements",
+    "anything",
+    "impossible",
+    "event"
+  ],
+  "source_file": "act-print-26.pdf",
+  "page_range": [
+    16,
+    17
+  ],
+  "char_count": 583,
+  "word_count": 107
+}

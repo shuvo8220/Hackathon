@@ -1,0 +1,816 @@
+{
+  "rjsc_forms": {
+    "private_limited_company": {
+      "description": "Private Limited Company (প্রাইভেট লিমিটেড কোম্পানি)",
+      "requirements": {
+        "min_directors": 2,
+        "max_shareholders": 50
+      },
+      "phases": {
+        "phase_0_pre_registration": {
+          "label": "Pre-Registration",
+          "forms": [
+            {
+              "id": "0.1",
+              "name": "Name Clearance Application",
+              "purpose": "Reserve unique company name with RJSC",
+              "signed_by": "Promoter",
+              "legal_basis": null
+            },
+            {
+              "id": "0.2",
+              "name": "Memorandum of Association (MoA)",
+              "purpose": "Defines company objectives, capital structure, and subscriber details. Object clauses must be within 400 words and 7 clauses.",
+              "signed_by": "All promoters and witness",
+              "legal_basis": "Companies Act 1994",
+              "stamp_duty_bdt": 2000
+            },
+            {
+              "id": "0.3",
+              "name": "Articles of Association (AoA)",
+              "purpose": "Internal governance rules covering director powers, voting rights, and share transfer procedures",
+              "signed_by": "All promoters and witness",
+              "legal_basis": "Companies Act 1994",
+              "stamp_duty_bdt": 1000
+            },
+            {
+              "id": "0.4",
+              "name": "Subscriber Sheet",
+              "purpose": "Lists all shareholders with share quantities, NID/passport details, and ownership percentages",
+              "signed_by": "All shareholders",
+              "legal_basis": "Companies Act 1994"
+            }
+          ]
+        },
+        "phase_1_incorporation": {
+          "label": "Incorporation — Statutory Forms",
+          "forms": [
+            {
+              "id": "Form I",
+              "name": "Declaration on Registration of Company",
+              "purpose": "Sworn declaration that all legal requirements of company formation under the Companies Act have been fulfilled. Without this the Registrar will not issue the Certificate of Incorporation.",
+              "signed_by": "Advocate / Attorney / Director / Manager / Secretary of proposed company",
+              "legal_basis": "Section 25, Companies Act 1994"
+            },
+            {
+              "id": "Form VI",
+              "name": "Notice of Situation of Registered Office",
+              "purpose": "Declares the official physical address of the company. Also used for any future change of registered office address.",
+              "signed_by": "Director",
+              "legal_basis": "Section 77, Companies Act 1994"
+            },
+            {
+              "id": "Form IX",
+              "name": "Consent to Act as Director",
+              "purpose": "Each director individually consents to serve in that role. Includes NID, TIN, passport details. One form required per director.",
+              "signed_by": "Each director individually",
+              "legal_basis": "Companies Act 1994"
+            },
+            {
+              "id": "Form X",
+              "name": "List of Persons Consenting to be Directors",
+              "purpose": "Consolidated list of all directors who have provided consent via Form IX",
+              "signed_by": "Authorized signatory",
+              "legal_basis": "Companies Act 1994"
+            },
+            {
+              "id": "Form XII",
+              "name": "Particulars of Directors, Manager and Managing Agents",
+              "purpose": "Full particulars of all directors including name, address, nationality, occupation, and TIN",
+              "signed_by": "Company Secretary or Director",
+              "legal_basis": "Companies Act 1994"
+            }
+          ],
+          "supporting_documents": [
+            {
+              "id": "S1",
+              "name": "NID Copies (all directors and shareholders)",
+              "notes": "Bangladeshi nationals: National ID. Foreign nationals: Passport copy."
+            },
+            {
+              "id": "S2",
+              "name": "e-TIN Certificate (all directors)",
+              "notes": "Individual TIN of each director required"
+            },
+            {
+              "id": "S3",
+              "name": "Bank Certificate or Encashment Certificate",
+              "notes": "Local companies: simple bank certificate. Foreign shareholders: Encashment Certificate from scheduled bank is mandatory."
+            },
+            {
+              "id": "S4",
+              "name": "Proof of Registered Address",
+              "notes": "Rent agreement, utility bill, or ownership deed. PO boxes are not acceptable."
+            },
+            {
+              "id": "S5",
+              "name": "Treasury Challan / Payment Slip",
+              "notes": "Proof of registration fee payment at designated bank. Fee is tiered by authorized capital."
+            },
+            {
+              "id": "S6",
+              "name": "Special Adhesive Stamps",
+              "notes": "Stamp duty on MoA and AoA. Paid at BRAC Bank or Sonali Bank."
+            }
+          ]
+        },
+        "phase_2_post_incorporation": {
+          "label": "Post-Incorporation — Immediate Steps",
+          "forms": [
+            {
+              "id": "POST-1",
+              "name": "e-TIN Registration",
+              "purpose": "Company Tax Identification Number from NBR portal",
+              "authority": "National Board of Revenue (NBR)",
+              "deadline": "Immediately after incorporation",
+              "fee": "Free"
+            },
+            {
+              "id": "POST-2",
+              "name": "VAT/BIN Registration",
+              "purpose": "Business Identification Number for VAT compliance",
+              "authority": "NBR — Customs, Excise and VAT Commissionerate",
+              "deadline": "Before first taxable sale. Mandatory if turnover exceeds BDT 30 lakh.",
+              "fee": "Free"
+            },
+            {
+              "id": "POST-3",
+              "name": "Trade License Application",
+              "purpose": "Legal authority to operate in the designated area. Required by all businesses.",
+              "authority": "City Corporation (DNCC/DSCC), Pourashava, or Union Parishad based on address",
+              "deadline": "Before commencing business",
+              "fee_bdt_range": "1000–20000 annually"
+            },
+            {
+              "id": "POST-4",
+              "name": "Board Resolution for Bank Account Opening",
+              "purpose": "Authorizes specific signatories to open the company bank account",
+              "authority": "Submitted to chosen bank",
+              "deadline": "Immediately after incorporation"
+            },
+            {
+              "id": "Form 23B",
+              "name": "Notice by Auditor upon Appointment",
+              "purpose": "Newly appointed auditor notifies RJSC of acceptance of appointment",
+              "signed_by": "Auditor",
+              "legal_basis": "Section 210(2), Companies Act 1994",
+              "deadline": "Within 30 days of auditor appointment"
+            }
+          ]
+        },
+        "phase_3_annual_returns": {
+          "label": "Annual Compliance Returns",
+          "forms": [
+            {
+              "id": "Schedule X",
+              "name": "Annual Summary of Share Capital and List of Shareholders and Directors",
+              "purpose": "Annual return summarizing share capital structure and full list of current shareholders and directors",
+              "signed_by": "Director or Company Secretary",
+              "legal_basis": "Section 36, Companies Act 1994",
+              "deadline": "Within 21 days of Annual General Meeting (AGM)"
+            },
+            {
+              "id": "ANN-2",
+              "name": "Balance Sheet",
+              "purpose": "Audited financial position statement",
+              "signed_by": "Directors and Auditor",
+              "legal_basis": "Companies Act 1994",
+              "deadline": "Within 30 days of AGM"
+            },
+            {
+              "id": "ANN-3",
+              "name": "Profit and Loss Account",
+              "purpose": "Financial performance statement for the financial year",
+              "signed_by": "Directors and Auditor",
+              "legal_basis": "Companies Act 1994",
+              "deadline": "Within 30 days of AGM"
+            },
+            {
+              "id": "Form 23B",
+              "name": "Notice by Auditor upon Appointment",
+              "purpose": "Filed at each AGM when auditor is appointed or reappointed",
+              "signed_by": "Auditor",
+              "legal_basis": "Section 210(2), Companies Act 1994",
+              "deadline": "Within 30 days of appointment"
+            }
+          ]
+        },
+        "phase_4_event_triggered": {
+          "label": "Event-Triggered Returns",
+          "forms": [
+            {
+              "id": "Form III",
+              "name": "Notice of Consolidation, Division, or Conversion of Shares",
+              "purpose": "Filed when shares are consolidated (merged) or subdivided into smaller denominations",
+              "signed_by": "Director",
+              "legal_basis": "Sections 53–54, Companies Act 1994",
+              "trigger": "Share consolidation or subdivision"
+            },
+            {
+              "id": "Form IV",
+              "name": "Notice of Increase in Share Capital",
+              "purpose": "Filed when authorized capital is increased by board or shareholder resolution",
+              "signed_by": "Director",
+              "legal_basis": "Companies Act 1994",
+              "deadline": "Within 30 days of resolution",
+              "trigger": "Increase in authorized capital"
+            },
+            {
+              "id": "Form VI",
+              "name": "Notice of Change of Registered Office",
+              "purpose": "Filed when company changes its official registered address",
+              "signed_by": "Director",
+              "legal_basis": "Section 77, Companies Act 1994",
+              "trigger": "Change of registered office"
+            },
+            {
+              "id": "Form VIII",
+              "name": "Return of Special Resolutions and Alterations to MoA or AoA",
+              "purpose": "Filed when a special resolution is passed — e.g., change of company name, objects clause, or capital structure",
+              "signed_by": "Director or Company Secretary",
+              "legal_basis": "Companies Act 1994",
+              "deadline": "Within 15 days of passing resolution",
+              "trigger": "Special resolution passed at EGM or AGM"
+            },
+            {
+              "id": "Form XII",
+              "name": "Change in Director Particulars",
+              "purpose": "Filed when a director is appointed, resigns, or any personal details change",
+              "signed_by": "Director or Company Secretary",
+              "legal_basis": "Companies Act 1994",
+              "deadline": "Within 14 days of change",
+              "trigger": "Director appointment, resignation, or detail change"
+            },
+            {
+              "id": "Form XV",
+              "name": "Return of Allotment of Shares",
+              "purpose": "Filed when new shares are issued to new or existing shareholders",
+              "signed_by": "Director",
+              "legal_basis": "Companies Act 1994",
+              "deadline": "Within 60 days of allotment",
+              "trigger": "New share issuance"
+            },
+            {
+              "id": "Form XVIII",
+              "name": "Particulars of Mortgage or Charge",
+              "purpose": "Filed when company creates a mortgage or charge over its assets as loan collateral",
+              "signed_by": "Director",
+              "legal_basis": "Sections 159 and 391, Companies Act 1994",
+              "deadline": "Within 21 days of creation",
+              "trigger": "Creation of mortgage or charge (e.g., bank loan secured on assets)"
+            },
+            {
+              "id": "Form XIX",
+              "name": "Modification of Mortgage or Charge",
+              "purpose": "Filed when the terms of an existing registered mortgage or charge are changed",
+              "signed_by": "Director",
+              "legal_basis": "Section 167(3), Companies Act 1994",
+              "deadline": "Within 21 days of modification",
+              "trigger": "Amendment to existing mortgage terms"
+            },
+            {
+              "id": "Form XXVIII",
+              "name": "Memorandum of Satisfaction of Mortgage",
+              "purpose": "Filed when a mortgage or charge is fully repaid and discharged",
+              "signed_by": "Director",
+              "legal_basis": "Section 12, Companies Act 1994",
+              "deadline": "Within 21 days of satisfaction",
+              "trigger": "Full repayment and discharge of mortgage"
+            },
+            {
+              "id": "Form 117",
+              "name": "Instrument of Transfer of Shares",
+              "purpose": "Formal instrument recording the transfer of shares from one shareholder to another",
+              "signed_by": "Transferor and Transferee",
+              "legal_basis": "Companies Act 1994",
+              "trigger": "Share transfer between shareholders"
+            }
+          ]
+        }
+      }
+    },
+
+    "public_limited_company": {
+      "description": "Public Limited Company (পাবলিক লিমিটেড কোম্পানি)",
+      "requirements": {
+        "min_shareholders": 7,
+        "max_shareholders": "Unlimited",
+        "can_offer_public_shares": true
+      },
+      "phases": {
+        "phase_0_pre_registration": {
+          "label": "Pre-Registration",
+          "forms": [
+            {
+              "id": "0.1",
+              "name": "Name Clearance Application",
+              "purpose": "Reserve unique company name with RJSC",
+              "signed_by": "Promoter",
+              "legal_basis": null
+            },
+            {
+              "id": "0.2",
+              "name": "Memorandum of Association (MoA)",
+              "purpose": "Defines company objectives, capital structure, and subscriber details",
+              "signed_by": "All promoters and witness",
+              "legal_basis": "Companies Act 1994",
+              "stamp_duty_bdt": 2000
+            },
+            {
+              "id": "0.3",
+              "name": "Articles of Association (AoA)",
+              "purpose": "Internal governance rules for directors, shareholders, meetings, and share transfers",
+              "signed_by": "All promoters and witness",
+              "legal_basis": "Companies Act 1994",
+              "stamp_duty_bdt": 1000
+            },
+            {
+              "id": "0.4",
+              "name": "Subscriber Sheet",
+              "purpose": "Lists all founding shareholders with share quantities and identity details",
+              "signed_by": "All shareholders",
+              "legal_basis": "Companies Act 1994"
+            }
+          ]
+        },
+        "phase_1_incorporation": {
+          "label": "Incorporation — Statutory Forms",
+          "note": "Includes all forms required for private limited company PLUS the following additional forms",
+          "shared_with_private": ["Form I", "Form VI", "Form IX", "Form X", "Form XII"],
+          "additional_forms": [
+            {
+              "id": "Form XI",
+              "name": "Agreement to Take Qualification Shares in Proposed Company",
+              "purpose": "Agreement by a director to acquire the minimum qualifying shares required under the Articles of Association before taking office",
+              "signed_by": "Director",
+              "legal_basis": "Section 92, Companies Act 1994",
+              "required_when": "Director does not already hold the qualifying shares at the time of incorporation"
+            },
+            {
+              "id": "Form XIV",
+              "name": "Declaration before Commencing Business",
+              "purpose": "Statutory declaration confirming the company has satisfied all conditions required to commence business. Public companies cannot trade until this is filed.",
+              "signed_by": "Director or Company Secretary",
+              "legal_basis": "Section 150, Companies Act 1994",
+              "required_when": "Company files Statement in lieu of Prospectus instead of a full Prospectus"
+            },
+            {
+              "id": "PROSPECTUS",
+              "name": "Prospectus or Statement in Lieu of Prospectus",
+              "purpose": "Prospectus: required if raising capital from the public. Statement in Lieu of Prospectus: required if not inviting public subscription but still subject to public company rules.",
+              "signed_by": "All directors",
+              "legal_basis": "Sections 138–150, Companies Act 1994",
+              "required_when": "Before any public share offering or before commencing business without a prospectus"
+            }
+          ],
+          "supporting_documents": [
+            {
+              "id": "S1",
+              "name": "NID Copies (all directors and shareholders)",
+              "notes": "Bangladeshi nationals: National ID. Foreign nationals: Passport."
+            },
+            {
+              "id": "S2",
+              "name": "e-TIN Certificate (all directors)",
+              "notes": "Individual TIN of each director"
+            },
+            {
+              "id": "S3",
+              "name": "Bank Certificate or Encashment Certificate",
+              "notes": "Local shareholders: bank certificate. Foreign shareholders: Encashment Certificate mandatory."
+            },
+            {
+              "id": "S4",
+              "name": "Proof of Registered Address",
+              "notes": "Rent agreement, utility bill, or ownership deed. PO boxes not accepted."
+            },
+            {
+              "id": "S5",
+              "name": "Treasury Challan / Payment Slip",
+              "notes": "Registration fee paid at designated bank, tiered by authorized capital"
+            },
+            {
+              "id": "S6",
+              "name": "Special Adhesive Stamps",
+              "notes": "Stamp duty on MoA and AoA"
+            }
+          ]
+        },
+        "phase_2_post_incorporation": {
+          "label": "Post-Incorporation — Immediate and Early Steps",
+          "forms": [
+            {
+              "id": "POST-1",
+              "name": "e-TIN Registration",
+              "purpose": "Company Tax Identification Number from NBR portal",
+              "authority": "National Board of Revenue (NBR)",
+              "deadline": "Immediately after incorporation",
+              "fee": "Free"
+            },
+            {
+              "id": "POST-2",
+              "name": "VAT/BIN Registration",
+              "purpose": "Business Identification Number for VAT compliance",
+              "authority": "NBR — Customs, Excise and VAT Commissionerate",
+              "deadline": "Before first taxable sale",
+              "fee": "Free"
+            },
+            {
+              "id": "POST-3",
+              "name": "Trade License Application",
+              "purpose": "Legal authority to operate in designated area",
+              "authority": "City Corporation, Pourashava, or Union Parishad",
+              "deadline": "Before commencing business",
+              "fee_bdt_range": "1000–20000 annually"
+            },
+            {
+              "id": "POST-4",
+              "name": "Board Resolution for Bank Account Opening",
+              "purpose": "Authorizes signatories to open company bank account",
+              "authority": "Submitted to chosen bank",
+              "deadline": "Immediately after incorporation"
+            },
+            {
+              "id": "POST-5",
+              "name": "Statutory Report",
+              "purpose": "Report to shareholders detailing share allotments, cash received, preliminary expenses, and key contracts. Filed with RJSC.",
+              "authority": "RJSC",
+              "deadline": "Within 3 months of incorporation",
+              "applies_to": "Public companies only"
+            },
+            {
+              "id": "POST-6",
+              "name": "Statutory Meeting",
+              "purpose": "First general meeting of shareholders — mandatory for public companies",
+              "authority": "Internal — shareholders",
+              "deadline": "Within 3 to 6 months of incorporation",
+              "applies_to": "Public companies only"
+            },
+            {
+              "id": "Form 23B",
+              "name": "Notice by Auditor upon Appointment",
+              "purpose": "Newly appointed auditor notifies RJSC of acceptance of appointment",
+              "signed_by": "Auditor",
+              "legal_basis": "Section 210(2), Companies Act 1994",
+              "deadline": "Within 30 days of appointment"
+            },
+            {
+              "id": "POST-7",
+              "name": "BSEC Registration",
+              "purpose": "Bangladesh Securities and Exchange Commission registration — required if company intends to list on DSE or CSE and offer shares to the public",
+              "authority": "Bangladesh Securities and Exchange Commission (BSEC)",
+              "deadline": "Before any public share offering",
+              "applies_to": "Public companies intending to list only"
+            }
+          ]
+        },
+        "phase_3_annual_returns": {
+          "label": "Annual Compliance Returns",
+          "forms": [
+            {
+              "id": "Schedule X",
+              "name": "Annual Summary of Share Capital and List of Shareholders and Directors",
+              "purpose": "Annual return of share capital and full shareholders/directors list",
+              "signed_by": "Director or Company Secretary",
+              "legal_basis": "Section 36, Companies Act 1994",
+              "deadline": "Within 21 days of AGM"
+            },
+            {
+              "id": "ANN-2",
+              "name": "Balance Sheet",
+              "purpose": "Audited financial position statement",
+              "signed_by": "Directors and Auditor",
+              "legal_basis": "Companies Act 1994",
+              "deadline": "Within 30 days of AGM"
+            },
+            {
+              "id": "ANN-3",
+              "name": "Profit and Loss Account",
+              "purpose": "Annual financial performance statement",
+              "signed_by": "Directors and Auditor",
+              "legal_basis": "Companies Act 1994",
+              "deadline": "Within 30 days of AGM"
+            },
+            {
+              "id": "ANN-4",
+              "name": "Directors Report",
+              "purpose": "Board report on company performance, future plans, and governance. Filed with Balance Sheet.",
+              "signed_by": "Directors",
+              "legal_basis": "Companies Act 1994",
+              "deadline": "With Balance Sheet, within 30 days of AGM",
+              "applies_to": "Public companies only"
+            },
+            {
+              "id": "ANN-5",
+              "name": "Statutory Report (Annual)",
+              "purpose": "Annual detailed operations and financial report for public companies",
+              "signed_by": "Directors",
+              "legal_basis": "Companies Act 1994",
+              "deadline": "Annual",
+              "applies_to": "Public companies only"
+            },
+            {
+              "id": "Form 23B",
+              "name": "Notice by Auditor upon Appointment",
+              "purpose": "Filed each year at AGM when auditor is appointed or reappointed",
+              "signed_by": "Auditor",
+              "legal_basis": "Section 210(2), Companies Act 1994",
+              "deadline": "Within 30 days of appointment"
+            }
+          ]
+        },
+        "phase_4_event_triggered": {
+          "label": "Event-Triggered Returns",
+          "note": "Identical to private limited company event-triggered forms",
+          "forms": [
+            { "id": "Form III", "name": "Notice of Consolidation, Division, or Conversion of Shares", "legal_basis": "Sections 53–54, Companies Act 1994", "trigger": "Share consolidation or subdivision" },
+            { "id": "Form IV", "name": "Notice of Increase in Share Capital", "legal_basis": "Companies Act 1994", "deadline": "Within 30 days of resolution", "trigger": "Increase in authorized capital" },
+            { "id": "Form VI", "name": "Notice of Change of Registered Office", "legal_basis": "Section 77, Companies Act 1994", "trigger": "Change of registered office address" },
+            { "id": "Form VIII", "name": "Return of Special Resolutions and Alterations to MoA or AoA", "legal_basis": "Companies Act 1994", "deadline": "Within 15 days of resolution", "trigger": "Special resolution at EGM or AGM" },
+            { "id": "Form XII", "name": "Change in Director Particulars", "legal_basis": "Companies Act 1994", "deadline": "Within 14 days of change", "trigger": "Director appointment, resignation, or detail change" },
+            { "id": "Form XV", "name": "Return of Allotment of Shares", "legal_basis": "Companies Act 1994", "deadline": "Within 60 days of allotment", "trigger": "New share issuance" },
+            { "id": "Form XVIII", "name": "Particulars of Mortgage or Charge", "legal_basis": "Sections 159 and 391, Companies Act 1994", "deadline": "Within 21 days of creation", "trigger": "Creation of mortgage or charge" },
+            { "id": "Form XIX", "name": "Modification of Mortgage or Charge", "legal_basis": "Section 167(3), Companies Act 1994", "deadline": "Within 21 days of modification", "trigger": "Amendment to existing mortgage" },
+            { "id": "Form XXVIII", "name": "Memorandum of Satisfaction of Mortgage", "legal_basis": "Section 12, Companies Act 1994", "deadline": "Within 21 days of satisfaction", "trigger": "Full repayment and discharge of mortgage" },
+            { "id": "Form 117", "name": "Instrument of Transfer of Shares", "legal_basis": "Companies Act 1994", "trigger": "Share transfer between shareholders" }
+          ]
+        }
+      }
+    },
+
+    "foreign_company": {
+      "description": "Foreign Company (বিদেশী কোম্পানি)",
+      "note": "A company incorporated outside Bangladesh establishing a place of business in Bangladesh as a Branch Office or Liaison/Representative Office. Does not go through name clearance. Registers its existing foreign company name directly.",
+      "types": ["Branch Office", "Liaison Office", "Representative Office"],
+      "phases": {
+        "phase_1_registration": {
+          "label": "Registration — Statutory Forms (Unique to Foreign Companies)",
+          "forms": [
+            {
+              "id": "Form XXXVI",
+              "form_number": 36,
+              "name": "Charter, Statutes, Memorandum and Articles of Association",
+              "purpose": "Certified copy of the parent company's constitutional documents from its home country — the foreign equivalent of MoA and AoA",
+              "signed_by": "Authorized representative of parent company",
+              "legal_basis": "Section 379, Companies Act 1994"
+            },
+            {
+              "id": "Form XXXVII",
+              "form_number": 37,
+              "name": "Notice of Address of the Registered or Principal Office of the Company",
+              "purpose": "Declares the full address of the parent company's head office in its home country",
+              "signed_by": "Authorized representative",
+              "legal_basis": "Section 379, Companies Act 1994"
+            },
+            {
+              "id": "Form XXXVIII",
+              "form_number": 38,
+              "name": "List of Directors and Managers",
+              "purpose": "Complete list of all directors and managers of the parent company including names, nationalities, and addresses",
+              "signed_by": "Authorized representative",
+              "legal_basis": "Section 379, Companies Act 1994"
+            },
+            {
+              "id": "Form XXXIX",
+              "form_number": 39,
+              "name": "Return of Persons Authorized to Accept Service",
+              "purpose": "Names the person or persons in Bangladesh who are authorized to receive legal notices and service of process on behalf of the foreign company",
+              "signed_by": "Authorized representative",
+              "legal_basis": "Section 379, Companies Act 1994"
+            },
+            {
+              "id": "Form XLII",
+              "form_number": 42,
+              "name": "Notice of Situation of Principal Place of Business in Bangladesh",
+              "purpose": "Declares the address of the company's principal place of business in Bangladesh. Also used to notify any future change in Bangladesh office address.",
+              "signed_by": "Authorized representative or local agent",
+              "legal_basis": "Section 379(I), Companies Act 1994"
+            }
+          ],
+          "supporting_documents": [
+            {
+              "id": "FC1",
+              "name": "Certificate of Incorporation of Parent Company",
+              "purpose": "Certified copy from home country confirming legal existence of the parent company",
+              "requirement": "Must be notarized and apostilled or legalized by Bangladesh Embassy. Must be in English or accompanied by certified English translation."
+            },
+            {
+              "id": "FC2",
+              "name": "MoA and AoA of Parent Company (3 copies)",
+              "purpose": "Certified copies of the parent company's constitutional documents",
+              "requirement": "Certified copy; in English or with certified translation"
+            },
+            {
+              "id": "FC3",
+              "name": "Board Resolution of Parent Company",
+              "purpose": "Parent company board resolution approving the establishment of operations in Bangladesh",
+              "requirement": "Must be notarized and authenticated"
+            },
+            {
+              "id": "FC4",
+              "name": "Power of Attorney",
+              "purpose": "Authorizes a local representative in Bangladesh to act on behalf of the parent company for registration and operational purposes",
+              "requirement": "Notarized and authenticated by Bangladesh Embassy in home country"
+            },
+            {
+              "id": "FC5",
+              "name": "Passport Copies of All Directors",
+              "purpose": "Identity verification for all directors of the parent company"
+            },
+            {
+              "id": "FC6",
+              "name": "Encashment Certificate",
+              "purpose": "Proof of inward remittance of minimum required capital from overseas. SWIFT transfer must reference Equity Investment.",
+              "requirement": "Minimum USD 50,000 for Liaison Office. Issued by a scheduled bank in Bangladesh."
+            },
+            {
+              "id": "FC7",
+              "name": "BIDA Permission",
+              "purpose": "Bangladesh Investment Development Authority approval — mandatory for all foreign companies establishing any presence in Bangladesh",
+              "authority": "Bangladesh Investment Development Authority (BIDA)"
+            },
+            {
+              "id": "FC8",
+              "name": "Bangladesh Bank Approval",
+              "purpose": "Bangladesh Bank permission for foreign exchange transactions and capital remittance",
+              "authority": "Bangladesh Bank",
+              "required_for": "Branch Offices engaged in revenue-generating business activities. Not required for non-commercial Liaison Offices."
+            },
+            {
+              "id": "FC9",
+              "name": "Auditor Report of Parent Company (last year)",
+              "purpose": "Most recent audited financial statements of the parent company",
+              "requirement": "Certified copy; translated to English if required"
+            }
+          ]
+        },
+        "phase_2_post_registration": {
+          "label": "Post-Registration — Immediate Steps",
+          "forms": [
+            {
+              "id": "POST-1",
+              "name": "e-TIN Registration",
+              "purpose": "Company Tax Identification Number from NBR portal",
+              "authority": "National Board of Revenue (NBR)",
+              "deadline": "Immediately after registration",
+              "fee": "Free"
+            },
+            {
+              "id": "POST-2",
+              "name": "VAT/BIN Registration",
+              "purpose": "Business Identification Number for VAT — mandatory for all operating entities",
+              "authority": "NBR",
+              "deadline": "Before commencing business",
+              "fee": "Free"
+            },
+            {
+              "id": "POST-3",
+              "name": "Trade License Application",
+              "purpose": "Legal authority to operate in the designated area",
+              "authority": "City Corporation or Pourashava",
+              "deadline": "Before commencing operations",
+              "fee_bdt_range": "1000–20000 annually"
+            }
+          ]
+        },
+        "phase_3_annual_returns": {
+          "label": "Annual Compliance Returns",
+          "forms": [
+            {
+              "id": "ANN-1",
+              "name": "Annual Financial Statements (Bangladesh Operations)",
+              "purpose": "Audited financial accounts of the Bangladesh branch or liaison operations",
+              "signed_by": "Local authorized representative and Auditor",
+              "deadline": "Within 6 months of financial year end"
+            },
+            {
+              "id": "ANN-2",
+              "name": "BIDA Quarterly FDI Report",
+              "purpose": "Mandatory quarterly reporting of foreign direct investment transactions to BIDA",
+              "authority": "Bangladesh Investment Development Authority (BIDA)",
+              "deadline": "Quarterly"
+            },
+            {
+              "id": "ANN-3",
+              "name": "Bangladesh Bank Foreign Exchange Report",
+              "purpose": "Reporting of all foreign exchange transactions as required",
+              "authority": "Bangladesh Bank",
+              "deadline": "As transactions occur"
+            },
+            {
+              "id": "Form 23B",
+              "name": "Notice by Auditor upon Appointment",
+              "purpose": "Auditor notifies RJSC of appointment",
+              "signed_by": "Auditor",
+              "legal_basis": "Section 210(2), Companies Act 1994",
+              "deadline": "Within 30 days of appointment"
+            }
+          ]
+        },
+        "phase_4_event_triggered": {
+          "label": "Event-Triggered Returns",
+          "forms": [
+            {
+              "id": "Form XLI",
+              "form_number": 41,
+              "name": "Notice of Alteration in Address of Registered or Principal Office of Parent Company",
+              "purpose": "Filed when the parent company's head office address changes in its home country",
+              "signed_by": "Authorized representative",
+              "legal_basis": "Section 277, Companies Act 1994",
+              "trigger": "Change of parent company head office address"
+            },
+            {
+              "id": "Form XLII",
+              "form_number": 42,
+              "name": "Notice of Change in Principal Place of Business in Bangladesh",
+              "purpose": "Filed when the Bangladesh office address changes",
+              "signed_by": "Authorized representative",
+              "legal_basis": "Section 379(I), Companies Act 1994",
+              "trigger": "Bangladesh office relocation"
+            },
+            {
+              "id": "Form XXXVIII",
+              "form_number": 38,
+              "name": "Updated List of Directors and Managers",
+              "purpose": "Filed when the parent company appoints new directors or existing directors change",
+              "signed_by": "Authorized representative",
+              "legal_basis": "Section 379, Companies Act 1994",
+              "trigger": "Change in parent company board of directors"
+            },
+            {
+              "id": "Form XXXIX",
+              "form_number": 39,
+              "name": "Change of Authorized Local Representative",
+              "purpose": "Filed when the person authorized to accept service in Bangladesh changes",
+              "signed_by": "Authorized representative",
+              "legal_basis": "Section 379, Companies Act 1994",
+              "trigger": "Change of Bangladesh authorized agent or representative"
+            },
+            {
+              "id": "Form XVIII",
+              "name": "Particulars of Mortgage or Charge",
+              "legal_basis": "Sections 159 and 391, Companies Act 1994",
+              "deadline": "Within 21 days of creation",
+              "trigger": "Creation of mortgage or charge over Bangladesh assets"
+            },
+            {
+              "id": "Form XIX",
+              "name": "Modification of Mortgage or Charge",
+              "legal_basis": "Section 167(3), Companies Act 1994",
+              "deadline": "Within 21 days of modification",
+              "trigger": "Modification of existing mortgage"
+            },
+            {
+              "id": "Form XXVIII",
+              "name": "Memorandum of Satisfaction of Mortgage",
+              "legal_basis": "Section 12, Companies Act 1994",
+              "deadline": "Within 21 days of satisfaction",
+              "trigger": "Full repayment and discharge of mortgage"
+            }
+          ]
+        }
+      }
+    },
+
+    "master_comparison_matrix": {
+      "description": "Which forms apply to which company type",
+      "forms": [
+        { "form": "Name Clearance Application", "private_limited": true, "public_limited": true, "foreign_company": false },
+        { "form": "MoA and AoA (local)", "private_limited": true, "public_limited": true, "foreign_company": false },
+        { "form": "Form XXXVI — Foreign MoA/AoA", "private_limited": false, "public_limited": false, "foreign_company": true },
+        { "form": "Form I — Declaration on Registration", "private_limited": true, "public_limited": true, "foreign_company": false },
+        { "form": "Form VI — Registered Office Notice", "private_limited": true, "public_limited": true, "foreign_company": false },
+        { "form": "Form IX — Director Consent (per director)", "private_limited": true, "public_limited": true, "foreign_company": false },
+        { "form": "Form X — List of Consenting Directors", "private_limited": true, "public_limited": true, "foreign_company": false },
+        { "form": "Form XI — Qualification Shares Agreement", "private_limited": false, "public_limited": true, "public_limited_note": "Required only if director does not already hold qualifying shares", "foreign_company": false },
+        { "form": "Form XII — Director Particulars", "private_limited": true, "public_limited": true, "foreign_company": true },
+        { "form": "Form XIV — Declaration before Commencing Business", "private_limited": false, "public_limited": true, "foreign_company": false },
+        { "form": "Prospectus or Statement in Lieu of Prospectus", "private_limited": false, "public_limited": true, "foreign_company": false },
+        { "form": "Form XXXVII — Foreign Registered Office Address", "private_limited": false, "public_limited": false, "foreign_company": true },
+        { "form": "Form XXXVIII — Foreign Directors List", "private_limited": false, "public_limited": false, "foreign_company": true },
+        { "form": "Form XXXIX — Authorized Service Agent", "private_limited": false, "public_limited": false, "foreign_company": true },
+        { "form": "Form XLII — Bangladesh Office Notice", "private_limited": false, "public_limited": false, "foreign_company": true },
+        { "form": "Encashment Certificate", "private_limited": "Foreign shareholders only", "public_limited": "Foreign shareholders only", "foreign_company": true },
+        { "form": "BIDA Permission", "private_limited": "Optional — mandatory for manufacturing", "public_limited": "Optional", "foreign_company": true },
+        { "form": "Board Resolution for Bank Account", "private_limited": true, "public_limited": true, "foreign_company": true },
+        { "form": "Subscriber Sheet", "private_limited": true, "public_limited": true, "foreign_company": false },
+        { "form": "Power of Attorney", "private_limited": "If using agent", "public_limited": "If using agent", "foreign_company": true },
+        { "form": "Schedule X — Annual Shareholder Return", "private_limited": true, "public_limited": true, "foreign_company": true },
+        { "form": "Balance Sheet (annual)", "private_limited": true, "public_limited": true, "foreign_company": true },
+        { "form": "Profit and Loss Account (annual)", "private_limited": true, "public_limited": true, "foreign_company": true },
+        { "form": "Directors Report (annual)", "private_limited": false, "public_limited": true, "foreign_company": false },
+        { "form": "Statutory Report", "private_limited": false, "public_limited": true, "foreign_company": false },
+        { "form": "Form 23B — Auditor Appointment Notice", "private_limited": true, "public_limited": true, "foreign_company": true },
+        { "form": "Form III — Share Consolidation or Division", "private_limited": "Event-triggered", "public_limited": "Event-triggered", "foreign_company": false },
+        { "form": "Form IV — Capital Increase Notice", "private_limited": "Event-triggered", "public_limited": "Event-triggered", "foreign_company": false },
+        { "form": "Form VIII — Special Resolution Return", "private_limited": "Event-triggered", "public_limited": "Event-triggered", "foreign_company": false },
+        { "form": "Form XV — Return of Allotment", "private_limited": "Event-triggered", "public_limited": "Event-triggered", "foreign_company": false },
+        { "form": "Form XVIII — Mortgage or Charge", "private_limited": "Event-triggered", "public_limited": "Event-triggered", "foreign_company": "Event-triggered" },
+        { "form": "Form XIX — Mortgage Modification", "private_limited": "Event-triggered", "public_limited": "Event-triggered", "foreign_company": "Event-triggered" },
+        { "form": "Form XXVIII — Mortgage Satisfaction", "private_limited": "Event-triggered", "public_limited": "Event-triggered", "foreign_company": "Event-triggered" },
+        { "form": "Form 117 — Share Transfer Instrument", "private_limited": "Event-triggered", "public_limited": "Event-triggered", "foreign_company": false },
+        { "form": "Form XLI — Foreign Office Address Change", "private_limited": false, "public_limited": false, "foreign_company": "Event-triggered" }
+      ]
+    }
+  }
+}

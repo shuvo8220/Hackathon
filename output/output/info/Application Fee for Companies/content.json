@@ -1,0 +1,101 @@
+{
+  "filename": "Application Fee for Companies.pdf",
+  "title": "Unknown Document",
+  "document_type": "general",
+  "sections": [],
+  "pricing_tables": [
+    {
+      "category": "Documents Registration",
+      "items": [
+        {
+          "item": "Memorandum of Association",
+          "price_bdt": 2000
+        },
+        {
+          "item": "Articles of Association",
+          "price_range": "10000-50000",
+          "condition": "For capital up to 40 lakh",
+          "notes": "Above 40 lakh up to 12 crore: 30000 BDT; Above 12 crore: 50000 BDT"
+        }
+      ]
+    },
+    {
+      "category": "Documentation Fees",
+      "items": [
+        {
+          "item": "6 Document Filing (5 forms + 1 Memorandum and Articles of Association)",
+          "price_bdt": 1200
+        },
+        {
+          "item": "Articles of Association for share capital",
+          "price_range": "10000-100000",
+          "condition": "For capital up to 20 thousand, additional charges apply above 20000 up to 50000: 10000 BDT; Above 50000 up to 100000: 10000 BDT; Above 100000 up to 500000: 100000 BDT; Above 500000: 130000 BDT"
+        }
+      ]
+    },
+    {
+      "category": "Digital Certificate Supply",
+      "items": [
+        {
+          "item": "Digital Certificate Supply",
+          "price_bdt": 2000
+        }
+      ]
+    },
+    {
+      "category": "Membership Fees",
+      "items": [
+        {
+          "item": "Up to 20 members",
+          "price_bdt": 1000
+        },
+        {
+          "item": "From 20 to 100 members",
+          "price_bdt": 2500
+        },
+        {
+          "item": "Above 100 members",
+          "price_range": "300",
+          "condition": "For every 100 members or part thereof"
+        },
+        {
+          "item": "Unlimited members",
+          "price_bdt": 7500
+        }
+      ]
+    },
+    {
+      "category": "Organizational Registration",
+      "items": [
+        {
+          "item": "Memorandum of Association Registration",
+          "price_bdt": 0
+        },
+        {
+          "item": "Articles of Association Registration",
+          "price_bdt": 300
+        }
+      ]
+    },
+    {
+      "category": "Partnership Registration",
+      "items": [
+        {
+          "item": "Partnership Registration",
+          "price_bdt": 5000
+        },
+        {
+          "item": "Partnership Filing Fees",
+          "price_bdt": 500
+        }
+      ]
+    }
+  ],
+  "key_points": [],
+  "metadata": {
+    "source_file": "Application Fee for Companies.pdf",
+    "page_count": 8,
+    "table_count": 7,
+    "text_length": 2937
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "chunk_id": "the_contract_act__chviii__s146",
+  "act_name": "The Contract Act",
+  "act_number": "ACT NO. IX OF 1872",
+  "chapter_number": "VIII",
+  "chapter_title": "OF INDEMNITY AND GUARANTEE",
+  "section_number": "146",
+  "section_title": "Where two or more persons are co-sureties for the same debt or duty,",
+  "content": "146. Where two or more persons are co-sureties for the same debt or duty,\nliable to\neither jointly or severally, and whether under the same or different contracts,\ncontribute\nequally and whether with or without the knowledge of each other, the co-sureties, in\nthe absence of any contract to the contrary, are liable, as between\nthemselves, to pay each an equal share of the whole debt, or of that part of it\nwhich remains unpaid by the principal debtor.\nIllustrations\n(a) A, B and C are sureties to D for the sum of 3,000 Taka lent to E. E makes\ndefault in payment. A, B and C are liable, as between themselves, to pay\n1,000 Taka each.\n\n(b) A, B and C are sureties to D for the sum of 1,000 Taka lent to E, and\nthere is a contract between A, B and C that A is to be responsible to the\nextent of one-quarter, B to the extent of one-quarter and C to the extent of\none-half. E makes default in payment. As between the sureties, A is liable to\npay 250 Taka, B 250 Taka and C 500 Taka.\nLiability of",
+  "sub_sections": [
+    {
+      "marker": "(a)",
+      "text": "A, B and C are sureties to D for the sum of 3,000 Taka lent to E. E makes\ndefault in payment. A, B and C are liable, as between themselves, to pay\n1,000 Taka each."
+    },
+    {
+      "marker": "(b)",
+      "text": "A, B and C are sureties to D for the sum of 1,000 Taka lent to E, and\nthere is a contract between A, B and C that A is to be responsible to the\nextent of one-quarter, B to the extent of one-quarter and C to the extent of\none-half. E makes default in payment. As between the sureties, A is liable to\npay 250 Taka, B 250 Taka and C 500 Taka.\nLiability of"
+    }
+  ],
+  "illustrations": [
+    "A, B and C are sureties to D for the sum of 3,000 Taka lent to E. E makes\ndefault in payment. A, B and C are liable, as between themselves, to pay\n1,000 Taka each.",
+    "A, B and C are sureties to D for the sum of 1,000 Taka lent to E, and\nthere is a contract between A, B and C that A is to be responsible to the\nextent of one-quarter, B to the extent of one-quarter and C to the extent of\none-half. E makes default in payment. As between the sureties, A is liable to\npay 250 Taka, B 250 Taka and C 500 Taka.\nLiability of"
+  ],
+  "exceptions": [],
+  "explanations": [],
+  "language": "en",
+  "has_illustrations": true,
+  "priority": 3,
+  "keywords": [
+    "liability",
+    "contract",
+    "where",
+    "more",
+    "persons",
+    "sureties",
+    "same",
+    "debt",
+    "duty"
+  ],
+  "source_file": "act-print-26.pdf",
+  "page_range": [
+    41,
+    42
+  ],
+  "char_count": 993,
+  "word_count": 194
+}

@@ -1,0 +1,52 @@
+{
+  "chunk_id": "the_contract_act__ch0__s20",
+  "act_name": "The Contract Act",
+  "act_number": "ACT NO. IX OF 1872",
+  "chapter_number": "0",
+  "chapter_title": "PRELIMINARY",
+  "section_number": "20",
+  "section_title": "Where both the parties to an agreement are under a mistake as to a",
+  "content": "20. Where both the parties to an agreement are under a mistake as to a\nvoid where\nmatter of fact essential to the agreement, the agreement is void.\nboth parties\nare under\nExplanation - An erroneous opinion as to the value of the thing which forms\nmistake as\nthe subject-matter of the agreement is not to be deemed a mistake as to a\nto matter of\nfact matter of fact.\nIllustrations\n(a) A agrees to sell to B a specific cargo of goods supposed to be on its way\nfrom England to 3[Chittagong]. It turns out that, before the day of the bargain,\nthe ship conveying the cargo had been cast away and the goods lost. Neither\nparty was aware of the facts. The agreement is void.\n(b) A agrees to buy from B a certain horse. It turns out that the horse was\ndead at the time of the bargain, though neither party was aware of the fact.\nThe agreement is void.\n(c) A, being entitled to an estate for the life of B, agrees to sell it to C. B was\ndead at the time of the agreement, but both parties were ignorant of the fact.\nThe agreement is void.\nEffect of",
+  "sub_sections": [
+    {
+      "marker": "(a)",
+      "text": "A agrees to sell to B a specific cargo of goods supposed to be on its way\nfrom England to 3[Chittagong]. It turns out that, before the day of the bargain,\nthe ship conveying the cargo had been cast away and the goods lost. Neither\nparty was aware of the facts. The agreement is void."
+    },
+    {
+      "marker": "(b)",
+      "text": "A agrees to buy from B a certain horse. It turns out that the horse was\ndead at the time of the bargain, though neither party was aware of the fact.\nThe agreement is void."
+    },
+    {
+      "marker": "(c)",
+      "text": "A, being entitled to an estate for the life of B, agrees to sell it to C. B was\ndead at the time of the agreement, but both parties were ignorant of the fact.\nThe agreement is void.\nEffect of"
+    }
+  ],
+  "illustrations": [
+    "A agrees to sell to B a specific cargo of goods supposed to be on its way\nfrom England to 3[Chittagong]. It turns out that, before the day of the bargain,\nthe ship conveying the cargo had been cast away and the goods lost. Neither\nparty was aware of the facts. The agreement is void.",
+    "A agrees to buy from B a certain horse. It turns out that the horse was\ndead at the time of the bargain, though neither party was aware of the fact.\nThe agreement is void.",
+    "A, being entitled to an estate for the life of B, agrees to sell it to C. B was\ndead at the time of the agreement, but both parties were ignorant of the fact.\nThe agreement is void.\nEffect of"
+  ],
+  "exceptions": [],
+  "explanations": [
+    "Explanation - An erroneous opinion as to the value of the thing which forms\nmistake as\nthe subject-matter of the agreement is not to be deemed a mistake as to a\nto matter of\nfact matter of fact."
+  ],
+  "language": "en",
+  "has_illustrations": true,
+  "priority": 3,
+  "keywords": [
+    "void",
+    "agreement",
+    "where",
+    "both",
+    "parties",
+    "under",
+    "mistake"
+  ],
+  "source_file": "act-print-26.pdf",
+  "page_range": [
+    9,
+    9
+  ],
+  "char_count": 1039,
+  "word_count": 204
+}

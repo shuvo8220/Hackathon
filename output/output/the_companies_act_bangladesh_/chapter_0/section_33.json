@@ -1,0 +1,59 @@
+{
+  "chunk_id": "the_companies_act_bangladesh___ch0__s33",
+  "act_name": "The Companies Act (Bangladesh)",
+  "act_number": "Act No. 18 of 1994",
+  "chapter_number": "0",
+  "chapter_title": "PRELIMINARY",
+  "section_number": "33",
+  "section_title": "Membership of holding company",
+  "content": "33. Membership of holding company\n(1) Except in the cases mentioned in this section a body corporate cannot be a member of a company which is its holding\ncompany and any allotment or transfer or shares in a company to its subsidiary shall be void.\n(2) Nothing in this section shall apply; namely--\n(a) Where the subsidiary is the legal representative of a deceased member of the holding company; or\n(b) Where the subsidiary is concerned as trustee unless the holding company or a subsidiary thereof is beneficially\ninterested under the trust and is not so interested only by way of security for the purposes of a transaction entered\ninto by it in the ordinary course of business which includes the lending of money.\n(3) This section shall not prevent a subsidiary from continuing to be a member of its holding company if it was a member\nthereof either at the commencement of this Act or before becoming a subsidiary of the holding company; but except in the\ncases referred to in sub-section (2), the subsidiary shall have no right to vote at meetings of the holding company or of any\nclass of members thereof.\n(4) Subject of sub-section (2) sub-sections (1) and (3) shall apply in relation to a nominee for a body corporate which is a\nsubsidiary as if reference in the said sub-sections (1) and (3) to such a body corporate and a subsidiary included reference to\na nominee for it.\n(5) In relation to a holding company which is either a company limited by guarantee or an unlimited company the reference\nin this section to shares shall, whether or not the company has a share capital be construed as including a reference to the\ninterest of its members as such whatever be the form of that interest.",
+  "sub_sections": [
+    {
+      "marker": "(1)",
+      "text": "Except in the cases mentioned in this section a body corporate cannot be a member of a company which is its holding\ncompany and any allotment or transfer or shares in a company to its subsidiary shall be void."
+    },
+    {
+      "marker": "(2)",
+      "text": "Nothing in this section shall apply; namely--"
+    },
+    {
+      "marker": "(a)",
+      "text": "Where the subsidiary is the legal representative of a deceased member of the holding company; or"
+    },
+    {
+      "marker": "(b)",
+      "text": "Where the subsidiary is concerned as trustee unless the holding company or a subsidiary thereof is beneficially\ninterested under the trust and is not so interested only by way of security for the purposes of a transaction entered\ninto by it in the ordinary course of business which includes the lending of money."
+    },
+    {
+      "marker": "(3)",
+      "text": "This section shall not prevent a subsidiary from continuing to be a member of its holding company if it was a member\nthereof either at the commencement of this Act or before becoming a subsidiary of the holding company; but except in the\ncases referred to in sub-section (2), the subsidiary shall have no right to vote at meetings of the holding company or of any\nclass of members thereof."
+    },
+    {
+      "marker": "(4)",
+      "text": "Subject of sub-section (2) sub-sections (1) and (3) shall apply in relation to a nominee for a body corporate which is a\nsubsidiary as if reference in the said sub-sections (1) and (3) to such a body corporate and a subsidiary included reference to\na nominee for it."
+    },
+    {
+      "marker": "(5)",
+      "text": "In relation to a holding company which is either a company limited by guarantee or an unlimited company the reference\nin this section to shares shall, whether or not the company has a share capital be construed as including a reference to the\ninterest of its members as such whatever be the form of that interest."
+    }
+  ],
+  "illustrations": [],
+  "exceptions": [],
+  "explanations": [],
+  "language": "en",
+  "has_illustrations": false,
+  "priority": 1,
+  "keywords": [
+    "void",
+    "membership",
+    "holding",
+    "company"
+  ],
+  "source_file": "5e1654acafde5companiesact_0.pdf",
+  "page_range": [
+    9,
+    9
+  ],
+  "char_count": 1698,
+  "word_count": 301
+}

@@ -1,0 +1,46 @@
+{
+  "chunk_id": "the_contract_act__ch0__s200",
+  "act_name": "The Contract Act",
+  "act_number": "ACT NO. IX OF 1872",
+  "chapter_number": "0",
+  "chapter_title": "PRELIMINARY",
+  "section_number": "200",
+  "section_title": "An act done by one person on behalf of another, without such other",
+  "content": "200. An act done by one person on behalf of another, without such other\nof\nperson's authority, which, if done with authority, would have the effect of\nunauthorized\nact cannot subjecting a third person to damages, or of terminating any right or interest of\ninjure third\na third person, cannot, by ratification, be made to have such effect.\nperson\nIllustrations\n(a) A, not being authorized thereto by B, demands, on behalf of B, the\ndelivery of a chattle, the property of B, from C, who is in possession of it.\nThis demand cannot be ratified by B, so as to make C liable for damages for\nhis refusal to deliver.\n(b) A holds a lease from B, terminable on three months' notice. C, an\nunauthorized person, gives notice of termination to A. The notice cannot be\nratified by B, so as to be binding on A.\nRevocation of Authority\nTermination",
+  "sub_sections": [
+    {
+      "marker": "(a)",
+      "text": "A, not being authorized thereto by B, demands, on behalf of B, the\ndelivery of a chattle, the property of B, from C, who is in possession of it.\nThis demand cannot be ratified by B, so as to make C liable for damages for\nhis refusal to deliver."
+    },
+    {
+      "marker": "(b)",
+      "text": "A holds a lease from B, terminable on three months' notice. C, an\nunauthorized person, gives notice of termination to A. The notice cannot be\nratified by B, so as to be binding on A.\nRevocation of Authority\nTermination"
+    }
+  ],
+  "illustrations": [
+    "A, not being authorized thereto by B, demands, on behalf of B, the\ndelivery of a chattle, the property of B, from C, who is in possession of it.\nThis demand cannot be ratified by B, so as to make C liable for damages for\nhis refusal to deliver.",
+    "A holds a lease from B, terminable on three months' notice. C, an\nunauthorized person, gives notice of termination to A. The notice cannot be\nratified by B, so as to be binding on A.\nRevocation of Authority\nTermination"
+  ],
+  "exceptions": [],
+  "explanations": [],
+  "language": "en",
+  "has_illustrations": true,
+  "priority": 3,
+  "keywords": [
+    "damages",
+    "done",
+    "person",
+    "behalf",
+    "another",
+    "without",
+    "such",
+    "other"
+  ],
+  "source_file": "act-print-26.pdf",
+  "page_range": [
+    52,
+    52
+  ],
+  "char_count": 831,
+  "word_count": 150
+}

@@ -1,0 +1,44 @@
+Document: RJSC Informational Document
+Type: guidelines
+File: Office of the Registrar of Joint Stock Companies and Firms_Registration.pdf
+Pages: 4
+Tables: 3
+
+============================================================
+
+KEY POINTS:
+1. Promoters must have name clearance before applying for registration.
+2. A Certificate of Incorporation is issued upon fulfillment of registration requirements.
+
+============================================================
+
+CONTENT SECTIONS:
+
+## REGISTRATION
+
+i. The promoters of a new entity (having name clearance, where applicable) apply for registration with necessary documents, prescribed forms & schedules, stamps and fees, as appropriate to the entity type. The promoters -
+
+a. prepare Memorandum/Articles of Association, forms & schedules etc., as appropriate to the entity type.
+
+b. collect necessary special adhesive stamps, where applicable, from treasury by depositing money through treasury challan in Bangladesh Bank (treasury officials affix the stamps on the Memorandum and Articles of Association and put seals & signature on the stamps).
+
+c. submit the registration application in the designated RJSC office.
+
+d. pay the registration fee at the designated RJSC office counter.
+
+ii. RJSC issues a ‘Certificate of Incorporation’ upon satisfaction that the promoters-
+
+a. obtained name clearance of the proposed entity (not applicable for Foreign Companies and Partnership Firms) prior to the registration application.
+
+b. submitted the registration application within the validity period of the name clearance (not applicable for Foreign Companies and Partnership Firms).
+
+c. prepared and submitted the Memorandum & Articles of Association, prescribed forms and schedules etc., as applicable.
+
+d. provided applicable stamps and fees.
+
+### Documents Constituting a Registration Application
+PRIVATE COMPANY (Companies Act, 1994) a. Memorandum & Articles of Association, original + 2 copies
+
+### Additional Required Forms
+b. Filled in Form I: Declaration on Registration of Company [Section 25]. c. Filled in Form VI: Notice of Situation of Registered Office and of Any Change therein [Section 77]. d. Filled in Form IX: Consent of Director to act [Section 92]. e. Filled in Form X: List of Persons Consenting to be Directors [Section 92]. f. Filled in Form XII: Particulars of the Directors, Manager and Managing.
+

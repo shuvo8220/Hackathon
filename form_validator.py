@@ -1,12 +1,13 @@
 """
 Multi-Agent Form Validator
 ==========================
-Agent 1 (Matcher): form JSON + act chunks theke relevant sections find kore
-Agent 2 (Validator): matched data validate kore
-Output: validated_forms/ folder e save kore
+Agent 1 (Searcher): form JSON er section number dekhle output/ folder theke
+                    relevant act sections khuje ane
+Agent 2 (Analyzer): matched sections + form structure dekhle
+                    ki ki field lagbe seta explain kore
+Output: validated_forms/ folder e .md file save kore
 
 Run: python form_validator.py
-Uses: OpenAI API
 """
 
 import json
@@ -17,25 +18,34 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BASE_DIR        = Path(__file__).parent
-ACT_CHUNKS_FILE = BASE_DIR / "act" / "act-print-26_chunks.jsonl"
-FORMS_DIR       = BASE_DIR / "company_Information"
-OUTPUT_DIR      = BASE_DIR / "validated_forms"
-OUTPUT_DIR.mkdir(exist_ok=True)
+BASE_DIR      = Path(__file__).parent
+OUTPUT_DIR    = BASE_DIR / "output" / "output"
+FORMS_DIR     = BASE_DIR / "company_Information"
+VALIDATED_DIR = BASE_DIR / "validated_forms"
+VALIDATED_DIR.mkdir(exist_ok=True)
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 MODEL  = "gpt-4o-mini"
 
-# ── Load act chunks ───────────────────────────────────────
+# ── Load data ─────────────────────────────────────────────
 
-def load_act_chunks() -> list[dict]:
-    chunks = []
-    with open(ACT_CHUNKS_FILE, "r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if line:
-                chunks.append(json.loads(line))
-    return chunks
+def load_all_sections() -> dict:
+    all_sections = {}
+    for act_dir in OUTPUT_DIR.iterdir():
+        if not act_dir.is_dir():
+            continue
+        sections = []
+        for chapter_dir in act_dir.iterdir():
+            if not chapter_dir.is_dir():
+                continue
+            for sec_file in chapter_dir.glob("section_*.json"):
+                try:
+                    sections.append(json.loads(sec_file.read_text(encoding="utf-8")))
+                except:
+                    pass
+        if sections:
+            all_sections[act_dir.name] = sections
+    return all_sections
 
 def load_form_jsons() -> list[dict]:
     forms = []
@@ -45,157 +55,187 @@ def load_form_jsons() -> list[dict]:
         forms.append(data)
     return forms
 
-# ── Agent 1: Matcher ──────────────────────────────────────
+# ── Agent 1: Searcher ─────────────────────────────────────
 
-def agent_matcher(form: dict, act_chunks: list[dict]) -> dict:
-    """
-    Form JSON + act chunks dekhle relevant act sections find kore.
-    Returns: {matched_sections, form_fields_mapped}
-    """
-    form_summary = json.dumps({
-        "form_name":  form.get("form_metadata", {}).get("form_name", ""),
-        "form_title": form.get("form_metadata", {}).get("form_title", ""),
-        "act_name":   form.get("form_metadata", {}).get("act_name", ""),
-        "section":    form.get("form_metadata", {}).get("section", ""),
-        "fields":     list(form.keys())
-    }, ensure_ascii=False)
+def agent_searcher(form: dict, all_sections: dict) -> list[dict]:
+    """Relevant act sections search kore return kore"""
+    form_meta    = form.get("form_metadata", {})
+    form_section = str(form_meta.get("section", ""))
+    form_act     = form_meta.get("act_name", "").lower()
+    form_title   = form_meta.get("form_title", "")
 
-    # Build act context (relevant chunks only)
-    act_context = "\n\n".join([
-        f"Section {c['section_num']}: {c['section_title']}\n{c['body'][:300]}"
-        for c in act_chunks
+    # Search across ALL acts - no filtering
+    candidate_sections = []
+    for act_name, sections in all_sections.items():
+        candidate_sections.extend(sections)
+
+    # Exact section number match
+    exact = [s for s in candidate_sections
+             if str(s.get("section_number", "")) == form_section]
+
+    # Keyword match across all acts
+    keywords = [w.lower() for w in (form_title + " " + form_act).split() if len(w) > 3]
+    keyword_matches = [
+        s for s in candidate_sections
+        if any(kw in s.get("content", "").lower() for kw in keywords)
+    ][:10]
+
+    combined = {s["chunk_id"]: s for s in exact + keyword_matches}
+    top_sections = list(combined.values())[:12]
+
+    if not top_sections:
+        return []
+
+    sections_summary = "\n\n".join([
+        f"[Section {s['section_number']}] {s.get('section_title','')}\n{s.get('content','')[:250]}"
+        for s in top_sections
     ])
 
+    form_summary = json.dumps({
+        "form_name":  form_meta.get("form_name", ""),
+        "form_title": form_title,
+        "act":        form_meta.get("act_name", ""),
+        "section":    form_section,
+    }, ensure_ascii=False)
+
     response = client.chat.completions.create(
         model=MODEL,
         messages=[
-            {"role": "system", "content": """You are a legal document matching expert for Bangladesh law.
-Given a government form and act sections, find which act sections are relevant to this form.
+            {"role": "system", "content": """You are a Bangladesh legal expert.
+Identify which act sections are directly relevant to this government form.
+Return JSON: {"sections": [{"section_number": "25", "section_title": "...", "relevance": "why relevant", "key_requirement": "what this section requires"}]}
+Return empty sections array if nothing matches."""},
+            {"role": "user", "content": f"Form:\n{form_summary}\n\nAct Sections:\n{sections_summary}"}
+        ],
+        response_format={"type": "json_object"}
+    )
+
+    result = json.loads(response.choices[0].message.content)
+    matched_basic = result.get("sections", [])
+
+    # Enrich with full content from original sections
+    sec_map = {str(s.get("section_number")): s for s in top_sections}
+    for m in matched_basic:
+        orig = sec_map.get(str(m.get("section_number")), {})
+        m["act_name"]    = orig.get("act_name", "")
+        m["full_content"] = orig.get("content", "")
+
+    return matched_basic
+
+# ── Agent 2: Analyzer ─────────────────────────────────────
+
+def agent_analyzer(form: dict, matched_sections: list[dict]) -> dict:
+    """
+    Form structure + matched sections dekhle
+    ki ki field lagbe seta explain kore.
+    """
+    form_meta   = form.get("form_metadata", {})
+    form_fields = {k: v for k, v in form.items()
+                   if not k.startswith("_") and k != "form_metadata"}
+
+    sections_text = "\n\n".join([
+        f"Section {s.get('section_number')}: {s.get('section_title')}\nRequirement: {s.get('key_requirement','')}"
+        for s in matched_sections
+    ]) or "No matching sections found."
+
+    response = client.chat.completions.create(
+        model=MODEL,
+        messages=[
+            {"role": "system", "content": """You are a Bangladesh ROC form expert.
+Given a form structure and relevant legal sections, explain what information is needed.
 Return JSON:
 {
-  "form_name": "Form I",
-  "matched_sections": [
-    {"section": "25", "title": "...", "relevance": "why this section applies"}
+  "legal_basis": "brief legal basis for this form",
+  "required_fields": [
+    {"field": "company_name", "description": "what to provide", "legal_ref": "Section X requires..."}
   ],
-  "legal_basis": "overall legal basis for this form",
-  "required_fields": ["list of fields that are legally required"]
+  "important_notes": ["note 1", "note 2"]
 }"""},
-            {"role": "user", "content": f"Form:\n{form_summary}\n\nAct Sections:\n{act_context[:3000]}"}
+            {"role": "user", "content": f"Form: {form_meta.get('form_name')} - {form_meta.get('form_title')}\n\nForm fields:\n{json.dumps(list(form_fields.keys()), ensure_ascii=False)}\n\nLegal sections:\n{sections_text}"}
         ],
         response_format={"type": "json_object"}
     )
 
     return json.loads(response.choices[0].message.content)
 
-# ── Agent 2: Validator ────────────────────────────────────
+# ── MD Report ─────────────────────────────────────────────
 
-def agent_validator(form: dict, matched: dict) -> dict:
-    """
-    Form data + matched act sections dekhle validate kore.
-    Returns: {is_valid, issues, suggestions, validated_form}
-    """
-    response = client.chat.completions.create(
-        model=MODEL,
-        messages=[
-            {"role": "system", "content": """You are a Bangladesh ROC form compliance validator.
-Given a filled form and its matched legal sections, validate the form data.
-Check:
-1. All required fields are present
-2. Field values match legal requirements
-3. Any inconsistencies or missing data
+def build_md_report(form: dict, matched: list[dict], analysis: dict) -> str:
+    form_meta  = form.get("form_metadata", {})
+    form_name  = form_meta.get("form_name", "Unknown")
+    form_title = form_meta.get("form_title", "")
+    filename   = form.get("_filename", "")
 
-Return JSON:
-{
-  "is_valid": true/false,
-  "issues": ["list of problems found"],
-  "suggestions": ["list of improvements"],
-  "field_validations": {
-    "field_name": {"valid": true/false, "note": "reason"}
-  },
-  "compliance_score": 0-100
-}"""},
-            {"role": "user", "content": f"Form data:\n{json.dumps(form, ensure_ascii=False, indent=2)[:2000]}\n\nLegal match:\n{json.dumps(matched, ensure_ascii=False, indent=2)[:1000]}"}
-        ],
-        response_format={"type": "json_object"}
-    )
+    sections_md = "\n\n".join([
+        f"### Section {s.get('section_number')}: {s.get('section_title')}\n"
+        f"**Act:** {s.get('act_name', '')}\n\n"
+        f"**Relevance:** {s.get('relevance','')}\n\n"
+        f"**Requirement:** {s.get('key_requirement','')}\n\n"
+        f"**Full Text:**\n{s.get('full_content','')}"
+        for s in matched
+    ]) or "- No matching sections found"
 
-    return json.loads(response.choices[0].message.content)
+    required_fields = analysis.get("required_fields", [])
+    fields_md = "\n".join([
+        f"| {f.get('field','')} | {f.get('description','')} | {f.get('legal_ref','')} |"
+        for f in required_fields
+    ]) or "| - | - | - |"
 
-# ── Main pipeline ─────────────────────────────────────────
+    notes = analysis.get("important_notes", [])
+    notes_md = "\n".join([f"- {n}" for n in notes]) or "- None"
 
-def main():
-    print("Loading act chunks...")
-    act_chunks = load_act_chunks()
-    print(f"  {len(act_chunks)} chunks loaded")
+    return f"""# {form_name} - {form_title}
 
-    print("Loading form JSONs...")
-    forms = load_form_jsons()
-    print(f"  {len(forms)} forms loaded\n")
-
-    for form in forms:
-        filename = form.pop("_filename")
-        form_name = form.get("form_metadata", {}).get("form_name", filename)
-        print(f"{'='*55}")
-        print(f"Processing: {form_name} ({filename})")
-
-        # Agent 1: Match
-        print(f"  [Agent 1] Matching with act sections...")
-        matched = agent_matcher(form, act_chunks)
-        sections = matched.get("matched_sections", [])
-        print(f"  Matched {len(sections)} section(s): {[s['section'] for s in sections]}")
-
-        # Agent 2: Validate
-        print(f"  [Agent 2] Validating form data...")
-        validation = agent_validator(form, matched)
-        score = validation.get("compliance_score", 0)
-        is_valid = validation.get("is_valid", False)
-        issues = validation.get("issues", [])
-        print(f"  Score: {score}/100 | Valid: {is_valid}")
-        if issues:
-            for issue in issues:
-                print(f"  [!] {issue}")
-
-        # Save MD report only
-        issues_md      = "\n".join([f"- {i}" for i in issues]) or "- None"
-        suggestions_md = "\n".join([f"- {s}" for s in validation.get('suggestions', [])]) or "- None"
-        sections_md    = "\n".join([f"- **Section {s['section']}**: {s['title']} — {s['relevance']}" for s in sections]) or "- None"
-        field_val      = validation.get("field_validations", {})
-        fields_md      = "\n".join([
-            f"| {f} | {'✅' if v.get('valid') else '❌'} | {v.get('note','')} |"
-            for f, v in field_val.items()
-        ]) or "| - | - | - |"
-
-        md_content = f"""# {form_name} — Validation Report
-
-## Summary
-| Item | Value |
-|------|-------|
-| Form | {form_name} |
-| File | {filename} |
-| Valid | {'✅ Yes' if is_valid else '❌ No'} |
-| Compliance Score | {score}/100 |
-| Legal Basis | {matched.get('legal_basis', '-')} |
+## Legal Basis
+{analysis.get('legal_basis', '-')}
 
 ## Matched Act Sections
 {sections_md}
 
-## Field Validations
-| Field | Status | Note |
-|-------|--------|------|
+## Required Fields
+| Field | What to Provide | Legal Reference |
+|-------|----------------|-----------------|
 {fields_md}
 
-## Issues
-{issues_md}
-
-## Suggestions
-{suggestions_md}
+## Important Notes
+{notes_md}
 """
-        md_stem = filename.replace(".json", "")
-        out_md  = OUTPUT_DIR / f"{md_stem}.md"
-        out_md.write_text(md_content, encoding="utf-8")
-        print(f"  Saved: {out_md.name}\n")
 
-    print(f"Done! Results in: {OUTPUT_DIR}")
+# ── Main ──────────────────────────────────────────────────
+
+def main():
+    print("Loading act sections...")
+    all_sections = load_all_sections()
+    total = sum(len(v) for v in all_sections.values())
+    print(f"  {len(all_sections)} acts, {total} sections loaded")
+
+    print("Loading forms...")
+    forms = load_form_jsons()
+    print(f"  {len(forms)} forms\n")
+
+    for form in forms:
+        filename  = form.get("_filename", "unknown.json")
+        form_name = form.get("form_metadata", {}).get("form_name", filename)
+
+        print("=" * 55)
+        print(f"Processing: {form_name}")
+
+        # Agent 1: Search
+        print("  [Agent 1] Searching act sections...")
+        matched = agent_searcher(form, all_sections)
+        print(f"  Found {len(matched)} section(s): {[s.get('section_number') for s in matched]}")
+
+        # Agent 2: Analyze
+        print("  [Agent 2] Analyzing required fields...")
+        analysis = agent_analyzer(form, matched)
+
+        # Save MD
+        md_content = build_md_report(form, matched, analysis)
+        out_path   = VALIDATED_DIR / filename.replace(".json", ".md")
+        out_path.write_text(md_content, encoding="utf-8")
+        print(f"  Saved: {out_path.name}\n")
+
+    print(f"Done! Reports in: {VALIDATED_DIR}")
 
 if __name__ == "__main__":
     main()
