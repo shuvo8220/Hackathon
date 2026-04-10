@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>ROC BD - AI Form System</title>
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter','Noto Sans Bengali',sans-serif;background:#f4f6f9;color:#1a1a2e;min-height:100vh}
+
+/* Layout */
+.shell{display:flex;flex-direction:column;min-height:100vh}
+.topbar{background:#0f3460;color:#fff;padding:0 24px;height:56px;display:flex;align-items:center;gap:12px;box-shadow:0 2px 8px rgba(0,0,0,0.15)}
+.topbar-logo{font-size:18px;font-weight:600;letter-spacing:-0.3px}
+.topbar-sub{font-size:12px;opacity:.65;margin-left:4px}
+.topbar-badge{margin-left:auto;background:#16213e;border-radius:20px;padding:4px 12px;font-size:11px;opacity:.8}
+
+.body{display:flex;flex:1;overflow:hidden}
+.sidebar{width:260px;background:#fff;border-right:1px solid #e8eaf0;display:flex;flex-direction:column;overflow-y:auto}
+.main{flex:1;overflow-y:auto;padding:24px}
+
+/* Sidebar */
+.sidebar-section{padding:16px}
+.sidebar-title{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:#6b7280;margin-bottom:10px}
+.step-item{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:8px;margin-bottom:4px;cursor:pointer;transition:background .15s}
+.step-item:hover{background:#f1f5f9}
+.step-item.active{background:#e8f0fe;color:#1a56db}
+.step-item.done{color:#15803d}
+.step-num{width:22px;height:22px;border-radius:50%;border:1.5px solid currentColor;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;flex-shrink:0}
+.step-item.done .step-num{background:#15803d;color:#fff;border-color:#15803d}
+.step-label{font-size:13px;font-weight:500}
+
+.sidebar-divider{height:1px;background:#f0f0f0;margin:8px 0}
+
+.session-item{padding:10px 12px;border-radius:8px;margin-bottom:4px;cursor:pointer;transition:background .15s;border:1px solid transparent}
+.session-item:hover{background:#f8fafc;border-color:#e2e8f0}
+.session-name{font-size:12px;font-weight:500;color:#374151}
+.session-meta{font-size:11px;color:#9ca3af;margin-top:2px}
+.session-badge{display:inline-block;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:500;margin-top:4px}
+.badge-ok{background:#dcfce7;color:#15803d}
+.badge-warn{background:#fef3c7;color:#b45309}
+
+/* Cards */
+.card{background:#fff;border-radius:12px;border:1px solid #e8eaf0;padding:24px;margin-bottom:20px}
+.card-title{font-size:16px;font-weight:600;margin-bottom:6px;color:#0f3460}
+.card-sub{font-size:13px;color:#6b7280;margin-bottom:18px}
+
+/* Step 1 */
+.desc-box{width:100%;min-height:100px;border:1.5px solid #e2e8f0;border-radius:10px;padding:14px;font-size:14px;font-family:inherit;resize:vertical;transition:border .15s;line-height:1.6}
+.desc-box:focus{outline:none;border-color:#3b82f6;box-shadow:0 0 0 3px rgba(59,130,246,.1)}
+.example-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chip{padding:6px 12px;border-radius:20px;border:1px solid #d1d5db;font-size:12px;cursor:pointer;background:#f9fafb;transition:all .15s;color:#374151}
+.chip:hover{background:#eff6ff;border-color:#93c5fd;color:#1d4ed8}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;border:none;transition:all .15s;font-family:inherit}
+.btn-primary{background:#0f3460;color:#fff}
+.btn-primary:hover{background:#16213e}
+.btn-primary:disabled{background:#9ca3af;cursor:not-allowed}
+.btn-outline{background:#fff;color:#374151;border:1.5px solid #d1d5db}
+.btn-outline:hover{background:#f9fafb}
+.btn-sm{padding:7px 14px;font-size:12px}
+.btn-success{background:#15803d;color:#fff}
+.btn-success:hover{background:#166534}
+
+/* Detection result */
+.detect-result{background:#f0fdf4;border:1px solid #86efac;border-radius:10px;padding:16px;margin-bottom:16px}
+.detect-type{font-size:15px;font-weight:600;color:#15803d;margin-bottom:4px}
+.detect-reason{font-size:13px;color:#166534}
+.forms-pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.form-pill{background:#dcfce7;color:#15803d;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:500}
+
+/* Step 2 - fields */
+.fields-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:700px){.fields-grid{grid-template-columns:1fr}}
+.field-group{display:flex;flex-direction:column;gap:5px}
+.field-group.full{grid-column:1/-1}
+.field-label{font-size:12px;font-weight:500;color:#374151}
+.field-req{color:#ef4444;margin-left:2px}
+.field-hint{font-size:11px;color:#9ca3af;margin-top:2px}
+.field-input{border:1.5px solid #e2e8f0;border-radius:8px;padding:9px 12px;font-size:13px;font-family:inherit;transition:border .15s;width:100%}
+.field-input:focus{outline:none;border-color:#3b82f6;box-shadow:0 0 0 3px rgba(59,130,246,.1)}
+.field-input.textarea{min-height:72px;resize:vertical}
+
+/* Step 3 - results */
+.form-result-card{background:#fff;border:1px solid #e8eaf0;border-radius:10px;margin-bottom:14px;overflow:hidden}
+.form-result-header{background:#f8fafc;padding:12px 16px;border-bottom:1px solid #e8eaf0;display:flex;align-items:center;gap:8px}
+.form-result-title{font-size:13px;font-weight:600;color:#0f3460;flex:1}
+.form-result-body{padding:0}
+.field-row{display:flex;align-items:start;padding:10px 16px;border-bottom:1px solid #f1f5f9;gap:12px}
+.field-row:last-child{border-bottom:none}
+.field-row-label{font-size:12px;color:#6b7280;width:180px;flex-shrink:0;padding-top:2px}
+.field-row-value{font-size:13px;color:#111827;flex:1;word-break:break-word}
+.field-row-value.missing{color:#ef4444;font-style:italic}
+.field-row-value.empty{color:#9ca3af;font-style:italic}
+.field-row-icon{width:16px;flex-shrink:0;padding-top:2px}
+
+/* Progress */
+.progress-bar{height:4px;background:#e2e8f0;border-radius:4px;overflow:hidden;margin-bottom:20px}
+.progress-fill{height:100%;background:#0f3460;border-radius:4px;transition:width .3s}
+
+/* Spinner */
+.spinner{width:20px;height:20px;border:2px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.spinner-dark{border-color:rgba(15,52,96,.2);border-top-color:#0f3460}
+
+/* Alert */
+.alert{padding:12px 14px;border-radius:8px;font-size:13px;margin-bottom:14px}
+.alert-error{background:#fef2f2;border:1px solid #fca5a5;color:#dc2626}
+.alert-info{background:#eff6ff;border:1px solid #93c5fd;color:#1d4ed8}
+
+/* Summary stats */
+.stats-row{display:flex;gap:12px;margin-bottom:20px}
+.stat-box{flex:1;background:#fff;border:1px solid #e8eaf0;border-radius:10px;padding:14px;text-align:center}
+.stat-num{font-size:22px;font-weight:600;color:#0f3460}
+.stat-label{font-size:11px;color:#6b7280;margin-top:2px}
+
+/* Empty state */
+.empty{text-align:center;padding:40px 20px;color:#6b7280}
+.empty-icon{font-size:40px;margin-bottom:12px;opacity:.4}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { useState, useEffect, useCallback } = React;
+
+const API = 'http://localhost:8000';
+
+const EXAMPLES = [
+  "আমি একটি IT সফটওয়্যার কোম্পানি খুলতে চাই, ২ জন পরিচালক",
+  "আমরা ৩ জন মিলে একটি ট্রেডিং পার্টনারশিপ করতে চাই",
+  "আমি একা একটি ফার্মেসি দোকান দিতে চাই",
+  "একটি এনজিও / সমিতি নিবন্ধন করতে চাই",
+];
+
+function Spinner({ dark }) {
+  return <div className={`spinner ${dark ? 'spinner-dark' : ''}`}/>;
+}
+
+function StepSidebar({ step, sessions, onLoadSession }) {
+  const steps = [
+    { num: 1, label: 'ব্যবসার বিবরণ' },
+    { num: 2, label: 'তথ্য পূরণ' },
+    { num: 3, label: 'ফর্ম ফলাফল' },
+  ];
+  return (
+    <div className="sidebar">
+      <div className="sidebar-section">
+        <div className="sidebar-title">ধাপসমূহ</div>
+        {steps.map(s => (
+          <div key={s.num} className={`step-item ${step === s.num ? 'active' : ''} ${step > s.num ? 'done' : ''}`}>
+            <div className="step-num">{step > s.num ? '✓' : s.num}</div>
+            <div className="step-label">{s.label}</div>
+          </div>
+        ))}
+      </div>
+      <div className="sidebar-divider"/>
+      <div className="sidebar-section" style={{flex:1}}>
+        <div className="sidebar-title">আগের Sessions</div>
+        {sessions.length === 0 && <div style={{fontSize:12,color:'#9ca3af'}}>কোনো session নেই</div>}
+        {sessions.map(s => (
+          <div key={s.session_id} className="session-item" onClick={() => onLoadSession(s.session_id)}>
+            <div className="session-name">{s.description}</div>
+            <div className="session-meta">{new Date(s.created_at).toLocaleDateString('bn-BD')}</div>
+            <span className={`session-badge ${s.missing_count > 0 ? 'badge-warn' : 'badge-ok'}`}>
+              {s.missing_count > 0 ? `${s.missing_count} টি বাকি` : '✓ সম্পন্ন'}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function Step1({ onDetect }) {
+  const [desc, setDesc] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+
+  async function handleDetect() {
+    if (!desc.trim()) return;
+    setLoading(true); setError('');
+    try {
+      const r = await fetch(`${API}/api/detect-business`, {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({ description: desc })
+      });
+      if (!r.ok) throw new Error('Server error');
+      const data = await r.json();
+      onDetect(data, desc);
+    } catch (e) {
+      setError('Server এ সংযোগ হয়নি। server.py চালু আছে কিনা চেক করুন।');
+    }
+    setLoading(false);
+  }
+
+  return (
+    <div className="card">
+      <div className="card-title">🏢 আপনার ব্যবসার বিবরণ দিন</div>
+      <div className="card-sub">AI স্বয়ংক্রিয়ভাবে বুঝে নেবে কোন ধরনের ব্যবসা এবং কোন ফর্মগুলো দরকার</div>
+      {error && <div className="alert alert-error">{error}</div>}
+      <div style={{marginBottom:12}}>
+        <div style={{fontSize:12,color:'#6b7280',marginBottom:8}}>উদাহরণ (ক্লিক করুন):</div>
+        <div className="example-chips">
+          {EXAMPLES.map(e => (
+            <div key={e} className="chip" onClick={() => setDesc(e)}>{e}</div>
+          ))}
+        </div>
+      </div>
+      <textarea
+        className="desc-box"
+        placeholder="যেমন: আমি একটি IT কোম্পানি খুলতে চাই, ২ জন পরিচালক থাকবে..."
+        value={desc}
+        onChange={e => setDesc(e.target.value)}
+      />
+      <div style={{marginTop:14,display:'flex',justifyContent:'flex-end'}}>
+        <button className="btn btn-primary" onClick={handleDetect} disabled={!desc.trim() || loading}>
+          {loading ? <Spinner/> : '→'} &nbsp; AI বিশ্লেষণ করুন
+        </button>
+      </div>
+    </div>
+  );
+}
+
+function Step2({ detected, description, onFill }) {
+  const [fields, setFields] = useState([]);
+  const [forms, setForms]   = useState([]);
+  const [values, setValues] = useState({});
+  const [loading, setLoading] = useState(true);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState('');
+
+  useEffect(() => {
+    fetch(`${API}/api/get-forms`, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ business_type: detected.business_type })
+    })
+    .then(r => r.json())
+    .then(data => {
+      setFields(data.fields_to_collect || []);
+      setForms(data.forms || []);
+      // Pre-fill defaults
+      const defaults = {};
+      (data.fields_to_collect || []).forEach(f => {
+        if (f.default) defaults[f.id] = f.default;
+      });
+      setValues(defaults);
+      setLoading(false);
+    })
+    .catch(() => { setError('Forms লোড হয়নি'); setLoading(false); });
+  }, [detected.business_type]);
+
+  async function handleSubmit() {
+    setSubmitting(true); setError('');
+    try {
+      const r = await fetch(`${API}/api/fill-forms`, {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({
+          business_type: detected.business_type,
+          business_description: description,
+          user_info: values
+        })
+      });
+      if (!r.ok) throw new Error('Fill error');
+      const data = await r.json();
+      onFill(data);
+    } catch (e) {
+      setError('ফর্ম ফিল করতে সমস্যা হয়েছে।');
+    }
+    setSubmitting(false);
+  }
+
+  const filled = Object.values(values).filter(v => v && v.toString().trim()).length;
+  const pct    = fields.length ? Math.round(filled / fields.length * 100) : 0;
+
+  return (
+    <>
+      {/* Detected info */}
+      <div className="detect-result">
+        <div className="detect-type">✅ {detected.label}</div>
+        <div className="detect-reason">{detected.reason}</div>
+        <div className="forms-pills">
+          {forms.map(f => <span key={f.form_id} className="form-pill">{f.title.split(' - ')[0]}</span>)}
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="card-title">📝 আপনার তথ্য পূরণ করুন</div>
+        <div className="card-sub">AI এই তথ্য দিয়ে সব {forms.length}টি ফর্ম স্বয়ংক্রিয়ভাবে পূরণ করবে</div>
+
+        {error && <div className="alert alert-error">{error}</div>}
+
+        {/* Progress */}
+        <div style={{marginBottom:16}}>
+          <div style={{display:'flex',justifyContent:'space-between',fontSize:12,color:'#6b7280',marginBottom:6}}>
+            <span>{filled} / {fields.length} field পূরণ হয়েছে</span>
+            <span>{pct}%</span>
+          </div>
+          <div className="progress-bar"><div className="progress-fill" style={{width:`${pct}%`}}/></div>
+        </div>
+
+        {loading ? (
+          <div style={{textAlign:'center',padding:30}}>
+            <Spinner dark/> <span style={{marginLeft:10,color:'#6b7280'}}>Fields লোড হচ্ছে...</span>
+          </div>
+        ) : (
+          <div className="fields-grid">
+            {fields.map(f => {
+              const isLong = f.type === 'textarea' || f.id.includes('address') || f.id.includes('directors');
+              return (
+                <div key={f.id} className={`field-group ${isLong ? 'full' : ''}`}>
+                  <label className="field-label">
+                    {f.label_bn || f.label}
+                    {f.required && <span className="field-req">*</span>}
+                  </label>
+                  {isLong ? (
+                    <textarea
+                      className="field-input textarea"
+                      placeholder={f.ai_hint || ''}
+                      value={values[f.id] || ''}
+                      onChange={e => setValues(prev => ({...prev, [f.id]: e.target.value}))}
+                    />
+                  ) : (
+                    <input
+                      type={f.type === 'number' ? 'number' : f.type === 'date' ? 'date' : 'text'}
+                      className="field-input"
+                      placeholder={f.ai_hint || ''}
+                      value={values[f.id] || ''}
+                      onChange={e => setValues(prev => ({...prev, [f.id]: e.target.value}))}
+                    />
+                  )}
+                  {f.ai_hint && <div className="field-hint">{f.ai_hint}</div>}
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+        <div style={{marginTop:20,display:'flex',justifyContent:'flex-end'}}>
+          <button className="btn btn-primary" onClick={handleSubmit} disabled={submitting || loading}>
+            {submitting ? <Spinner/> : '🤖'} &nbsp;
+            {submitting ? 'AI ফর্ম ফিল করছে...' : `AI দিয়ে ${forms.length}টি ফর্ম ফিল করুন`}
+          </button>
+        </div>
+      </div>
+    </>
+  );
+}
+
+function Step3({ result, onRestart }) {
+  const total   = result.total_fields;
+  const missing = result.missing_count;
+  const filled  = total - missing;
+
+  return (
+    <>
+      {/* Stats */}
+      <div className="stats-row">
+        <div className="stat-box">
+          <div className="stat-num">{result.forms.length}</div>
+          <div className="stat-label">ফর্ম তৈরি</div>
+        </div>
+        <div className="stat-box">
+          <div className="stat-num" style={{color:'#15803d'}}>{filled}</div>
+          <div className="stat-label">Field পূরণ</div>
+        </div>
+        <div className="stat-box">
+          <div className="stat-num" style={{color: missing ? '#ef4444' : '#15803d'}}>{missing}</div>
+          <div className="stat-label">Field বাকি</div>
+        </div>
+        <div className="stat-box">
+          <div className="stat-num" style={{color:'#7c3aed'}}>#{result.session_id}</div>
+          <div className="stat-label">Session ID</div>
+        </div>
+      </div>
+
+      {missing > 0 && (
+        <div className="alert alert-info">
+          ⚠️ {missing}টি required field এর তথ্য পাওয়া যায়নি। এগুলো manually পূরণ করতে হবে।
+        </div>
+      )}
+
+      {/* Each filled form */}
+      {result.forms.map(form => (
+        <div key={form.form_id} className="form-result-card">
+          <div className="form-result-header">
+            <span style={{fontSize:14}}>📄</span>
+            <div className="form-result-title">{form.title}</div>
+            <span style={{fontSize:11,color:'#6b7280'}}>{form.title_bn}</span>
+          </div>
+          <div className="form-result-body">
+            {form.filled_fields.map(f => {
+              const isMissing = f.missing;
+              const isEmpty   = !f.value && !f.required;
+              return (
+                <div key={f.id} className="field-row">
+                  <span className="field-row-icon">{isMissing ? '✗' : f.value ? '✓' : '○'}</span>
+                  <span className="field-row-label">{f.label_bn || f.label}</span>
+                  <span className={`field-row-value ${isMissing ? 'missing' : isEmpty ? 'empty' : ''}`}>
+                    {isMissing ? 'তথ্য দেওয়া হয়নি (আবশ্যক)' : f.value || '(ঐচ্ছিক, খালি)'}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      ))}
+
+      <div style={{textAlign:'center',marginTop:8}}>
+        <button className="btn btn-outline" onClick={onRestart}>
+          + নতুন ব্যবসার জন্য ফর্ম তৈরি করুন
+        </button>
+      </div>
+    </>
+  );
+}
+
+function App() {
+  const [step,      setStep]     = useState(1);
+  const [detected,  setDetected] = useState(null);
+  const [desc,      setDesc]     = useState('');
+  const [result,    setResult]   = useState(null);
+  const [sessions,  setSessions] = useState([]);
+
+  useEffect(() => {
+    fetch(`${API}/api/sessions`)
+      .then(r => r.json())
+      .then(d => setSessions(d.sessions || []))
+      .catch(() => {});
+  }, [result]);
+
+  async function loadSession(id) {
+    const r = await fetch(`${API}/api/session/${id}`);
+    const d = await r.json();
+    setResult({
+      session_id:    d.session_id,
+      forms:         d.forms,
+      missing_count: d.missing_count,
+      total_fields:  d.forms.reduce((a, f) => a + f.filled_fields.length, 0)
+    });
+    setDetected({ business_type: d.business_type, label: d.business_type, reason: '' });
+    setDesc(d.description);
+    setStep(3);
+  }
+
+  function handleDetect(data, description) {
+    setDetected(data);
+    setDesc(description);
+    setStep(2);
+  }
+
+  function handleFill(data) {
+    setResult(data);
+    setStep(3);
+  }
+
+  function restart() {
+    setStep(1); setDetected(null); setDesc(''); setResult(null);
+  }
+
+  return (
+    <div className="shell">
+      <div className="topbar">
+        <span style={{fontSize:20}}>🏛️</span>
+        <span className="topbar-logo">ROC Bangladesh</span>
+        <span className="topbar-sub">AI Form Automation System</span>
+        <span className="topbar-badge">আরওসি ফর্ম সিস্টেম</span>
+      </div>
+      <div className="body">
+        <StepSidebar step={step} sessions={sessions} onLoadSession={loadSession}/>
+        <div className="main">
+          {step === 1 && <Step1 onDetect={handleDetect}/>}
+          {step === 2 && <Step2 detected={detected} description={desc} onFill={handleFill}/>}
+          {step === 3 && <Step3 result={result} onRestart={restart}/>}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# Environment
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+hack/
+
+# Generated output
+filled_forms/
+pdf_forms/
+word_forms/
+forms_db/
+
+# Temp files
+_tmp_*.html
